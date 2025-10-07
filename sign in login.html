@@ -344,7 +344,9 @@
         //     }
         // });
         // API Base URL
-const API_URL = 'http://localhost:5000';
+const API_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+  ? 'http://localhost:5000'
+  : window.location.origin;
 
 // Razorpay Payment Links
 const PAYMENT_LINKS = {
@@ -550,4 +552,5 @@ function scrollToTop() {
 
     
 </body>
+
 </html>

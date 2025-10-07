@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painting Services - Suvidhaa</title>
+    <!-- Google Fonts Integration -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo" onclick="scrollToTop()">Suvidh<span>aa</span></div>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html" onclick="scrollToSection('home')">Home</a></li>
+                    <li><a href="Painting.html" onclick="scrollToSection('services')">Services</a></li>
+                    <li><a href="How it works.html" onclick="scrollToSection('how-works')">How It Works</a></li>
+                    <!-- <li><a href="about us.html" onclick="scrollToSection('features')">About us</a></li>
+                    <li><a href="contact us.html" onclick="scrollToSection('testimonials')">Contact us</a></li> -->
+                    <li><a href="provider.html" onclick="openProviderModal()" class="btn btn-outline1">Become a Provider</a></li>
+                    <li><a href="sign in login.html" onclick="openLoginModal()" class="btn btn-outline1">Login / Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="service-hero">
+        <div class="container">
+            <div class="service-hero-content">
+                <h1>Professional Painting Services</h1>
+                <p>Transform your space with our expert painting solutions for homes and businesses. Our skilled painters deliver flawless finishes with premium paints and attention to detail.</p>
+                <a href="#book-now" class="btn btn-lg">Book Service Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="service-overview">
+                <div class="service-details">
+                    <h2>Service Overview</h2>
+                    <p>Our painting services cover all your interior and exterior painting needs with premium quality paints and skilled professionals. Whether you need to refresh a single room, transform your entire home, or update your business premises, our experienced painters deliver superior results with minimal disruption.</p>
+                    
+                    <h3>Our Painting Services Include:</h3>
+                    <ul>
+                        <li>Interior Wall Painting</li>
+                        <li>Exterior House Painting</li>
+                        <li>Ceiling & Trim Painting</li>
+                        <li>Texture & Special Effect Finishes</li>
+                        <li>Wood & Metal Surface Painting</li>
+                        <li>Wallpaper Removal & Installation</li>
+                        <li>Color Consultation & Design</li>
+                        <li>Commercial Painting Solutions</li>
+                    </ul>
+                    
+                    <div class="service-highlights">
+                        <div class="highlight">
+                            <h4>✓ Premium Quality Paints</h4>
+                            <p>We use eco-friendly, long-lasting paints from top brands for superior finish.</p>
+                        </div>
+                        <div class="highlight">
+                            <h4>✓ 2-Year Color Warranty</h4>
+                            <p>We guarantee the durability of our paint jobs for 2 years.</p>
+                        </div>
+                        <div class="highlight">
+                            <h4>✓ Professional Clean-up</h4>
+                            <p>Our painters ensure zero mess with thorough post-job cleanup.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-image1">
+                    <img src="/api/placeholder/400/300" alt="Painting Service">
+                </div>
+            </div>
+            
+            <div class="service-pricing">
+                <h2>Transparent Pricing</h2>
+                <p>Our painting services come with clear, upfront pricing based on room size and requirements. No hidden charges.</p>
+                
+                <div class="pricing-tables">
+                    <div class="pricing-option">
+                        <h3>Basic Package</h3>
+                        <div class="price">₹599</div>
+                        <div class="price-details">Price per room (up to 100 sq. ft)</div>
+                        <ul>
+                            <li>Single Color Application</li>
+                            <li>Surface Preparation</li>
+                            <li>1 Coat of Premium Paint</li>
+                            <li>Basic Finishing</li>
+                        </ul>
+                        <a href="booking.html" class="btn">Book Now</a>
+                    </div>
+                    
+                    <div class="pricing-option">
+                        <h3>Standard Package</h3>
+                        <div class="price">₹999</div>
+                        <div class="price-details">Price per room (up to 150 sq. ft)</div>
+                        <ul>
+                            <li>Dual Color Options</li>
+                            <li>Thorough Surface Preparation</li>
+                            <li>2 Coats of Premium Paint</li>
+                            <li>Minor Crack Repairs</li>
+                            <li>Edge & Corner Finishing</li>
+                        </ul>
+                        <a href="booking.html" class="btn">Book Now</a>
+                    </div>
+                    
+                    <div class="pricing-option">
+                        <h3>Premium Package</h3>
+                        <div class="price">₹1799</div>
+                        <div class="price-details">Price per room (up to 200 sq. ft)</div>
+                        <ul>
+                            <li>Custom Color Mixing</li>
+                            <li>Complete Wall Preparation</li>
+                            <li>2 Coats of Luxury Paint</li>
+                            <li>Texture Effects (if requested)</li>
+                            <li>Full Wall Repairs</li>
+                            <li>3-Year Warranty</li>
+                        </ul>
+                        <a href="booking.html" class="btn">Book Now</a>
+                    </div>
+                </div>
+                
+                <p style="margin-top: 20px; font-size: 0.9rem;">* Final pricing may vary based on wall condition, ceiling height, and specific paint requirements. Our technician will provide an exact quote after inspection.</p>
+            </div>
+            
+            <div class="provider-profiles">
+                <h2>Meet Our Top Painters</h2>
+                <p>Our service providers are verified professionals with extensive experience in their field.</p>
+                
+                <div class="provider-cards">
+                    <div class="provider-card">
+                        <div class="provider-header">
+                            <div class="provider-avatar">
+                                <img src="/api/placeholder/60/60" alt="Painter Avatar">
+                            </div>
+                            <div class="provider-details">
+                                <h3>Rajesh Kumar</h3>
+                                <div class="rating">★★★★★</div>
+                                <div class="experience">15+ years experience</div>
+                            </div>
+                        </div>
+                        <div class="provider-body">
+                            <p>Master painter specialized in interior design and textured finishes. Known for precision work and creative color recommendations.</p>
+                        </div>
+                        <a href="#book-now" class="btn btn-outline" style="width: 100%; text-align: center;">Book This Pro</a>
+                    </div>
+                    
+                    <div class="provider-card">
+                        <div class="provider-header">
+                            <div class="provider-avatar">
+                                <img src="/api/placeholder/60/60" alt="Painter Avatar">
+                            </div>
+                            <div class="provider-details">
+                                <h3>Priya Desai</h3>
+                                <div class="rating">★★★★★</div>
+                                <div class="experience">10+ years experience</div>
+                            </div>
+                        </div>
+                        <div class="provider-body">
+                            <p>Expert in modern paint techniques and color coordination. Specializes in accent walls and decorative finishes for contemporary homes.</p>
+                        </div>
+                        <a href="#book-now" class="btn btn-outline" style="width: 100%; text-align: center;">Book This Pro</a>
+                    </div>
+                    
+                    <div class="provider-card">
+                        <div class="provider-header">
+                            <div class="provider-avatar">
+                                <img src="/api/placeholder/60/60" alt="Painter Avatar">
+                            </div>
+                            <div class="provider-details">
+                                <h3>Suresh Patel</h3>
+                                <div class="rating">★★★★☆</div>
+                                <div class="experience">12+ years experience</div>
+                            </div>
+                        </div>
+                        <div class="provider-body">
+                            <p>Specialized in exterior painting and weatherproofing. Known for durable finishes that withstand harsh weather conditions.</p>
+                        </div>
+                        <a href="#book-now" class="btn btn-outline" style="width: 100%; text-align: center;">Book This Pro</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="service-steps">
+                <h2>How It Works</h2>
+                <p>Booking a painting service with Suvidhaa is quick and hassle-free.</p>
+                
+                <div class="step-cards">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <h3>Book a Service</h3>
+                        <p>Select your painting needs and choose a convenient time slot.</p>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <h3>Free Consultation</h3>
+                        <p>A professional will visit for assessment and detailed quote.</p>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <h3>Service Execution</h3>
+                        <p>Our painters complete the job with minimal disruption to your routine.</p>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">4</div>
+                        <h3>Quality Check & Payment</h3>
+                        <p>Inspect the completed work and pay only when you're satisfied.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-section">
+                <h2>Frequently Asked Questions</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-question">How long will it take to paint my home?</div>
+                    <div class="faq-answer">The time required depends on the size of your space and complexity of the job. Typically, a standard room takes 1-2 days, while a complete 2-bedroom apartment may take 3-5 days. Our team provides a detailed timeline during the initial assessment.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">What type of paints do you use?</div>
+                    <div class="faq-answer">We use premium quality, eco-friendly paints from leading brands like Asian Paints, Berger, Dulux, and Nerolac. We offer various options including matte, semi-gloss, and gloss finishes, as well as specialized paints for different surfaces and requirements.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Do I need to move my furniture before painting?</div>
+                    <div class="faq-answer">While our team can move smaller furniture pieces, we recommend moving larger or valuable items before the service. We use professional-grade drop cloths and plastic coverings to protect your furniture and flooring during the painting process.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Can you help with color selection?</div>
+                    <div class="faq-answer">Yes, our professional painters provide free color consultation services. They can recommend suitable color schemes based on your space, lighting conditions, existing decor, and personal preferences. We can also provide sample patches to help you visualize the final result.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Do you offer texture painting and special effects?</div>
+                    <div class="faq-answer">Absolutely! Our painters are skilled in creating various textured finishes and special effects including stucco, sponging, color washing, metallic finishes, and accent walls. These premium services are quoted separately based on complexity and area coverage.</div>
+                </div>
+            </div>
+            
+            <div class="related-services">
+                <h2>Related Services</h2>
+                <div class="services-grid">
+                    <div class="service-card" onclick="viewServiceDetails('electrician')">
+                        <div class="service-img">
+                            <img src="/api/placeholder/400/250" alt="Electrician Services">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-rating">★★★★★</div>
+                            <h3>Electrician</h3>
+                            <p>Professional electrical services for your home and office.</p>
+                            <div class="service-price">Starting from ₹399</div>
+                            <a href="booking.html" class="btn btn-outline" onclick="event.stopPropagation(); bookService('electrician')">Book Now</a>
+                        </div>
+                    </div>
+
+                    <div class="service-card" onclick="viewServiceDetails('interior-design')">
+                        <div class="service-img">
+                            <img src="/api/placeholder/400/250" alt="Interior Design Services">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-rating">★★★★★</div>
+                            <h3>Interior Design</h3>
+                            <p>Transform your space with expert interior design services.</p>
+                            <div class="service-price">Starting from ₹1999</div>
+                            <a href="booking.html" class="btn btn-outline" onclick="event.stopPropagation(); bookService('interior-design')">Book Now</a>
+                        </div>
+                    </div>
+
+                    <div class="service-card" onclick="viewServiceDetails('carpentry')">
+                        <div class="service-img">
+                            <img src="/api/placeholder/400/250" alt="Carpentry Services">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-rating">★★★★☆</div>
+                            <h3>Carpentry</h3>
+                            <p>Custom furniture and woodwork solutions for your home.</p>
+                            <div class="service-price">Starting from ₹599</div>
+                            <a href="booking.html" class="btn btn-outline" onclick="event.stopPropagation(); bookService('carpentry')">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cta-booking" id="book-now">
+                <h2>Book Your Painting Service Now</h2>
+                <p>Our professionals are ready to transform your space with expert painting services. Schedule a consultation at your convenience.</p>
+                
+                <div class="booking-form">
+                    <form id="service-booking-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="service-type">Service Type</label>
+                                <select id="service-type" required>
+                                    <option value="">Select Service Type</option>
+                                    <option value="interior-painting">Interior Wall Painting</option>
+                                    <option value="exterior-painting">Exterior House Painting</option>
+                                    <option value="ceiling-painting">Ceiling Painting</option>
+                                    <option value="texture-painting">Texture & Special Effects</option>
+                                    <option value="wood-metal-painting">Wood & Metal Surface Painting</option>
+                                    <option value="wallpaper">Wallpaper Installation</option>
+                                    <option value="color-consultation">Color Consultation</option>
+                                    <option value="commercial-painting">Commercial Painting</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="service-date">Preferred Date</label>
+                                <input type="date" id="service-date" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="service-time">Preferred Time</label>
+                                <select id="service-time" required>
+                                    <option value="">Select Time Slot</option>
+                                    <option value="morning">Morning (8:00 AM - 12:00 PM)</option>
+                                    <option value="afternoon">Afternoon (12:00 PM - 4:00 PM)</option>
+                                    <option value="evening">Evening (4:00 PM - 8:00 PM)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="property-type">Property Type</label>
+                                <select id="property-type" required>
+                                    <option value="apartment">Apartment/Flat</option>
+                                    <option value="house">Independent House</option>
+                                    <option value="office">Office Space</option>
+                                    <option value="commercial">Commercial Property</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="room-count">Number of Rooms</label>
+                                <select id="room-count" required>
+                                    <option value="1">1 Room</option>
+                                    <option value="2">2 Rooms</option>
+                                    <option value="3">3 Rooms</option>
+                                    <option value="4">4 Rooms</option>
+                                    <option value="5+">5+ Rooms</option>
+                                    <option value="full">Full House</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="paint-preference">Paint Preference</label>
+                                <select id="paint-preference">
+                                    <option value="">No Specific Preference</option>
+                                    <option value="asian-paints">Asian Paints</option>
+                                    <option value="berger">Berger Paints</option>
+                                    <option value="dulux">Dulux</option>
+                                    <option value="nerolac">Nerolac</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="customer-name">Full Name</label>
+                                <input type="text" id="customer-name" placeholder="Your full name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="customer-phone">Phone Number</label>
+                                <input type="tel" id="customer-phone" placeholder="Your contact number" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="customer-address">Address</label>
+                                <input type="text" id="customer-address" placeholder="Service location address" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="service-description">Additional Requirements</label>
+                                <textarea id="service-description" placeholder="Please describe your painting requirements, color preferences, or any specific needs"></textarea>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <button type="submit" class="btn btn-lg" style="width: 100%;">Book Service Now</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Join Our Growing Community</h2>
+                <p class="cta-p">Whether you're looking for quality services or want to offer your professional skills, Suvidhaa is the platform that brings people together.</p>
+                <a href="#" class="btn btn-lg" onclick="openProviderModal()">Find Services</a>
+                <a href="#" class="btn btn-outline btn-lg">Become a Provider</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="logo" onclick="scrollToTop()">Suvidh<span>aa</span></div>
+                    <p>Connecting quality service providers with customers seeking reliable home services.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">f</a>
+                        <a href="#" class="social-link">X</a>
+                        <a href="https://www.instagram.com/suvidhaa.shop/" class="social-link">in</a>
+                        <a href="#" class="social-link">ig</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">How It Works</a></li>
+                        <li><a href="#">Become a Provider</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Popular Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Plumbing</a></li>
+                        <li><a href="#">Electrician</a></li>
+                        <li><a href="#">Home Cleaning</a></li>
+                        <li><a href="#">Painting</a></li>
+                        <li><a href="#">Beauty & Spa</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">Support Center</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Newsletter</h3>
+                    <div class="newsletter">
+                        <p>Subscribe to get updates on new services and exclusive offers.</p>
+                        <form class="newsletter-form">
+                            <input type="email" class="newsletter-input" placeholder="Your Email Address">
+                            <button type="submit" class="newsletter-btn">→</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Suvidhaa. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="back-to-top" onclick="scrollToTop()">↑</div>
+
+    <script>
+        // JavaScript to handle FAQ toggles
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentNode;
+                faqItem.classList.toggle('active');
+            });
+        });
+
+        // Function to scroll to top
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Function to toggle mobile menu
+        function toggleMenu() {
+            document.querySelector('.nav-links').classList.toggle('nav-active');
+            document.querySelector('.hamburger').classList.toggle('toggle');
+        }
+
+        // Functions to handle section scrolling
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+            // Close mobile menu if open
+            document.querySelector('.nav-links').classList.remove('nav-active');
+            document.querySelector('.hamburger').classList.remove('toggle');
+        }
+
+        // Functions for service navigation
+        function viewServiceDetails(serviceType) {
+            // Navigate to service detail page
+            console.log(`Viewing ${serviceType} service details`);
+            // Add actual navigation logic here
+        }
+
+        function bookService(serviceType) {
+            // Navigate to booking page for specific service
+            console.log(`Booking ${serviceType} service`);
+            // Add actual booking logic here
+        }
+
+        // Functions for modal dialogs
+        function openLoginModal() {
+            // Open login modal
+            console.log('Opening login modal');
+            // Add actual modal opening logic here
+        }
+
+        function openProviderModal() {
+            // Open provider registration modal
+            console.log('Opening provider registration modal');
+            // Add actual modal opening logic here
+        }
+
+        // Form submission handling
+        document.getElementById('service-booking-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Handle form submission
+            console.log('Booking form submitted');
+            // Add actual form submission logic here
+            alert('Thank you for booking our painting service! We will contact you shortly to confirm your consultation appointment.');
+        });
+
+        // Back to top button visibility
+        window.addEventListener('scroll', function() {
+            const backToTopButton = document.querySelector('.back-to-top');
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('visible');
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        });
+    </script>
+</body>
+</html>

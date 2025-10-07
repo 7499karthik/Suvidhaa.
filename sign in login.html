@@ -1,0 +1,553 @@
+ <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Suvidhaa - Connect with Local Service Providers</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="sign in login.css">
+        <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">Suvidh<span>aa</span></div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Beauty & Spa.html">Services</a></li>
+                    <li><a href="How it works.html">How It Works</a></li>
+                    <!-- <li><a href="about us.html">About Us</a></li>
+                    <li><a href="contact us.html">Contact</a></li> -->
+                    <li><a href="provider.html" class="btn btn-outline1">Become a Provider</a></li>
+                    <!-- <li><a href="#" class="btn btn-outline">Login / Sign Up</a></li> -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Auth Hero Section -->
+    <section class="auth-hero">
+      <div class="container">
+        <div class="auth-hero-content">
+          <h1>Welcome to Suvidhaa</h1>
+          <p>Your one-stop solution for all home services</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Login/Signup Form Section -->
+    <section class="section">
+      <div class="container">
+        <div class="auth-container">
+          <div class="tabs">
+            <div class="tab active" onclick="switchTab('login')">Login</div>
+            <div class="tab" onclick="switchTab('signup')">Sign Up</div>
+          </div>
+
+          <!-- Login Form -->
+          <div id="login-content">
+            <form id="login-form">
+              <div class="form-group">
+                <label for="login-email">Email or Phone Number</label>
+                <input type="text" id="login-email" class="form-control" placeholder="Enter your email or phone number" required>
+                <div class="error-msg" id="login-email-error">Please enter a valid email or phone number</div>
+              </div>
+              
+              <div class="form-group">
+                <label for="login-password">Password</label>
+                <input type="password" id="login-password" class="form-control" placeholder="Enter your password" required>
+                <div class="error-msg" id="login-password-error">Password must be at least 6 characters</div>
+              </div>
+              
+              <button type="submit" class="btn btn-lg1">Login</button>
+              
+              <div class="forgot-password">
+                <a href="#">Forgot Password?</a>
+              </div>
+              
+              <div class="or-divider">
+                <span>OR</span>
+              </div>
+              
+              <div class="social-login">
+                <button class="social-btn">G</button>
+                <button class="social-btn">f</button>
+              </div>
+            </form>
+          </div>
+          
+          <!-- Signup Form -->
+          <div id="signup-content" class="hidden">
+            <form id="signup-form">
+              <div class="form-group">
+                <label for="signup-name">Full Name</label>
+                <input type="text" id="signup-name" class="form-control" placeholder="Enter your full name" required>
+                <div class="error-msg" id="signup-name-error">Please enter your full name</div>
+              </div>
+              
+              <div class="form-group">
+                <label for="signup-email">Email Address</label>
+                <input type="email" id="signup-email" class="form-control" placeholder="Enter your email address" required>
+                <div class="error-msg" id="signup-email-error">Please enter a valid email address</div>
+              </div>
+              
+              <div class="form-group">
+                <label for="signup-phone">Phone Number</label>
+                <input type="tel" id="signup-phone" class="form-control" placeholder="Enter your phone number" required>
+                <div class="error-msg" id="signup-phone-error">Please enter a valid phone number</div>
+              </div>
+              
+              <div class="form-group">
+                <label>Gender</label>
+                <div class="radio-group">
+                  <div class="radio-option">
+                    <input type="radio" id="gender-male" name="gender" value="male" checked>
+                    <label for="gender-male">Male</label>
+                  </div>
+                  <div class="radio-option">
+                    <input type="radio" id="gender-female" name="gender" value="female">
+                    <label for="gender-female">Female</label>
+                  </div>
+                  <div class="radio-option">
+                    <input type="radio" id="gender-other" name="gender" value="other">
+                    <label for="gender-other">Other</label>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="signup-password">Password</label>
+                <input type="password" id="signup-password" class="form-control" placeholder="Create a password" required>
+                <div class="error-msg" id="signup-password-error">Password must be at least 8 characters</div>
+              </div>
+              
+              <div class="form-group">
+                <label for="signup-confirm-password">Confirm Password</label>
+                <input type="password" id="signup-confirm-password" class="form-control" placeholder="Confirm your password" required>
+                <div class="error-msg" id="signup-confirm-error">Passwords do not match</div>
+              </div>
+              
+              <button type="submit" class="btn btn-lg1">Create Account</button>
+              
+              <div class="or-divider">
+                <span>OR</span>
+              </div>
+              
+              <div class="social-login">
+                <button class="social-btn">G</button>
+                <button class="social-btn">f</button>
+                
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+          <div class="cta-content">
+              <h2>Join Our Growing Community</h2>
+              <p>Whether you're looking for quality services or want to offer your professional skills, Suvidhaa is the platform that brings people together.</p>
+              <a href="#" class="btn btn-lg" onclick="openProviderModal()">Find Services</a>
+              <a href="#" class="btn btn-outline btn-lg">Become a Provider</a>
+          </div>
+      </div>
+  </section>
+
+  <footer>
+      <div class="container">
+          <div class="footer-content">
+              <div class="footer-column">
+                  <div class="logo" onclick="scrollToTop()">Suvidh<span>aa</span></div>
+                  <p>Connecting quality service providers with customers seeking reliable home services.</p>
+                  <div class="social-links">
+                      <a href="#" class="social-link">f</a>
+                      <a href="#" class="social-link">X</a>
+                      <a href="https://www.instagram.com/suvidhaa.shop/" class="social-link">in</a>
+                      <a href="#" class="social-link">ig</a>
+                  </div>
+              </div>
+              <div class="footer-column">
+                  <h3>Quick Links</h3>
+                  <ul class="footer-links">
+                      <li><a href="about us.html">About Us</a></li>
+                      <li><a href="provider.html">Services</a></li>
+                      <li><a href="How it works.html">How It Works</a></li>
+                      <li><a href="provider.html">Become a Provider</a></li>
+                      <!-- <li><a href="#">Blog</a></li> -->
+                      <li><a href="contact us.html">Contact Us</a></li>
+                  </ul>
+              </div>
+              <div class="footer-column">
+                  <h3>Popular Services</h3>
+                  <ul class="footer-links">
+                      <li><a href="Plumbing.html">Plumbing</a></li>
+                      <li><a href="Electrician.html">Electrician</a></li>
+                      <li><a href="House cleaning.html">Home Cleaning</a></li>
+                      <li><a href="Painting.html">Painting</a></li>
+                      <!-- <li><a href="#">Carpentry</a></li> -->
+                      <li><a href="Beauty & Spa.html">Beauty & Spa</a></li>
+                  </ul>
+              </div>
+              <div class="footer-column">
+                  <h3>Support</h3>
+                  <ul class="footer-links">
+                      <li><a href="#">FAQs</a></li>
+                      <li><a href="#">Privacy Policy</a></li>
+                      <li><a href="#">Terms & Conditions</a></li>
+                      <li><a href="#">Refund Policy</a></li>
+                      <li><a href="#">Support Center</a></li>
+                  </ul>
+              </div>
+              <div class="footer-column">
+                  <h3>Newsletter</h3>
+                  <div class="newsletter">
+                      <p>Subscribe to get updates on new services and exclusive offers.</p>
+                      <form class="newsletter-form">
+                          <input type="email" class="newsletter-input" placeholder="Your Email Address">
+                          <button type="submit" class="newsletter-btn">→</button>
+                      </form>
+                  </div>
+              </div>
+          </div>
+          <div class="footer-bottom">
+              <p>&copy; 2025 Suvidhaa. All rights reserved.</p>
+          </div>
+      </div>
+  </footer>
+
+     <script>
+        // function switchTab(tab) {
+        //     const loginTab = document.querySelector('.tab:first-child');
+        //     const signupTab = document.querySelector('.tab:last-child');
+        //     const loginContent = document.getElementById('login-content');
+        //     const signupContent = document.getElementById('signup-content');
+            
+        //     if (tab === 'login') {
+        //         loginTab.classList.add('active');
+        //         signupTab.classList.remove('active');
+        //         loginContent.classList.remove('hidden');
+        //         signupContent.classList.add('hidden');
+        //     } else {
+        //         loginTab.classList.remove('active');
+        //         signupTab.classList.add('active');
+        //         loginContent.classList.add('hidden');
+        //         signupContent.classList.remove('hidden');
+        //     }
+        // }
+        
+        // // Basic form validation
+        // document.getElementById('login-form').addEventListener('submit', function(e) {
+        //     e.preventDefault();
+        //     // Add your login logic here
+        //     alert('Login functionality will be implemented here');
+        // });
+        
+        // document.getElementById('signup-form').addEventListener('submit', function(e) {
+        //     e.preventDefault();
+        //     const password = document.getElementById('signup-password').value;
+        //     const confirmPassword = document.getElementById('signup-confirm-password').value;
+            
+        //     if (password !== confirmPassword) {
+        //         document.getElementById('signup-confirm-error').style.display = 'block';
+        //         return;
+        //     }
+            
+        //     // Add your signup logic here
+        //     alert('Signup functionality will be implemented here');
+        // });
+        //   // Mobile menu toggle
+        // function toggleMenu() {
+        //     const navLinks = document.querySelector('.nav-links');
+        //     const hamburger = document.querySelector('.hamburger');
+        //     navLinks.classList.toggle('nav-active');
+        //     hamburger.classList.toggle('toggle');
+        // }
+
+        // // Scroll to section
+        // function scrollToSection(sectionId) {
+        //     const section = document.getElementById(sectionId);
+        //     section.scrollIntoView({ behavior: 'smooth' });
+        // }
+
+        // // Scroll to top
+        // function scrollToTop() {
+        //     window.scrollTo({
+        //         top: 0,
+        //         behavior: 'smooth'
+        //     });
+        // }
+
+        // // Modal functions
+        // function openProviderModal() {
+        //     document.getElementById('providerModal').style.display = 'block';
+        // }
+
+        // function closeProviderModal() {
+        //     document.getElementById('providerModal').style.display = 'none';
+        // }
+
+        // function openLoginModal() {
+        //     document.getElementById('loginModal').style.display = 'block';
+        // }
+
+        // function closeLoginModal() {
+        //     document.getElementById('loginModal').style.display = 'none';
+        // }
+
+        // // Search services
+        // function searchServices() {
+        //     const service = document.getElementById('service-select').value;
+        //     const location = document.getElementById('location-input').value;
+            
+        //     if (service && location) {
+        //         alert(`Searching for ${service} services in ${location}`);
+        //         // In a real app, this would redirect to search results
+        //     } else {
+        //         alert('Please select a service and enter your location');
+        //     }
+        // }
+
+        // // View service details
+        // function viewServiceDetails(service) {
+        //     alert(`View details for ${service} service`);
+        //     // In a real app, this would open the service details page
+        // }
+
+        // // Book service
+        // function bookService(service) {
+        //     openLoginModal();
+        //     // In a real app, this would check if user is logged in,
+        //     // and then redirect to booking page or open login modal
+        // }
+
+        // // Back to top button visibility
+        // window.addEventListener('scroll', function() {
+        //     const backToTopButton = document.querySelector('.back-to-top');
+        //     if (window.pageYOffset > 300) {
+        //         backToTopButton.classList.add('visible');
+        //     } else {
+        //         backToTopButton.classList.remove('visible');
+        //     }
+        // });
+
+        // // Close modals when clicking outside
+        // window.addEventListener('click', function(event) {
+        //     const providerModal = document.getElementById('providerModal');
+        //     const loginModal = document.getElementById('loginModal');
+            
+        //     if (event.target === providerModal) {
+        //         closeProviderModal();
+        //     }
+            
+        //     if (event.target === loginModal) {
+        //         closeLoginModal();
+        //     }
+        // });
+        // API Base URL
+const API_URL = 'http://localhost:5000';
+
+// Razorpay Payment Links
+const PAYMENT_LINKS = {
+  primary: 'https://rzp.io/rzp/suvidhaapaymentzJATNoA4',
+  secondary: 'https://rzp.io/rzp/SecondarypamentSuvidhaawuPp9GY'
+};
+
+function switchTab(tab) {
+  const loginTab = document.querySelector('.tab:first-child');
+  const signupTab = document.querySelector('.tab:last-child');
+  const loginContent = document.getElementById('login-content');
+  const signupContent = document.getElementById('signup-content');
+  
+  if (tab === 'login') {
+    loginTab.classList.add('active');
+    signupTab.classList.remove('active');
+    loginContent.classList.remove('hidden');
+    signupContent.classList.add('hidden');
+  } else {
+    loginTab.classList.remove('active');
+    signupTab.classList.add('active');
+    loginContent.classList.add('hidden');
+    signupContent.classList.remove('hidden');
+  }
+}
+
+// Login Form Handler
+document.getElementById('login-form').addEventListener('submit', async function(e) {
+  e.preventDefault();
+  
+  const email = document.getElementById('login-email').value;
+  const password = document.getElementById('login-password').value;
+  
+  try {
+    const response = await fetch(`${API_URL}/api/auth/login`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ email, password })
+    });
+    
+    const data = await response.json();
+    
+    if (response.ok) {
+      // Store token in localStorage
+      localStorage.setItem('token', data.token);
+      localStorage.setItem('user', JSON.stringify(data.user));
+      
+      alert(`Welcome back, ${data.user.fullName}!`);
+      
+      // Redirect to dashboard
+      window.location.href = 'Dashbord.html';
+    } else {
+      alert(data.message || 'Login failed');
+    }
+  } catch (error) {
+    console.error('Login error:', error);
+    alert('An error occurred. Please try again.');
+  }
+});
+
+// Signup Form Handler
+document.getElementById('signup-form').addEventListener('submit', async function(e) {
+  e.preventDefault();
+  
+  const fullName = document.getElementById('signup-name').value;
+  const email = document.getElementById('signup-email').value;
+  const phone = document.getElementById('signup-phone').value;
+  const password = document.getElementById('signup-password').value;
+  const confirmPassword = document.getElementById('signup-confirm-password').value;
+  const gender = document.querySelector('input[name="gender"]:checked').value;
+  
+  // Validate passwords match
+  if (password !== confirmPassword) {
+    document.getElementById('signup-confirm-error').style.display = 'block';
+    return;
+  }
+  
+  // Validate password length
+  if (password.length < 8) {
+    document.getElementById('signup-password-error').style.display = 'block';
+    return;
+  }
+  
+  try {
+    const response = await fetch(`${API_URL}/api/auth/signup`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        fullName,
+        email,
+        phone,
+        gender,
+        password
+      })
+    });
+    
+    const data = await response.json();
+    
+    if (response.ok) {
+      // Store token and user info
+      localStorage.setItem('token', data.token);
+      localStorage.setItem('user', JSON.stringify(data.user));
+      
+      alert(`Account created successfully! Welcome, ${data.user.fullName}!`);
+      
+      // Redirect to dashboard
+      window.location.href = 'Dashbord.html';
+    } else {
+      alert(data.message || 'Signup failed');
+    }
+  } catch (error) {
+    console.error('Signup error:', error);
+    alert('An error occurred. Please try again.');
+  }
+});
+
+// Payment Function - Call this when user wants to make a payment
+function initiatePayment(amount, purpose = 'service') {
+  // You can choose which payment link to use based on amount or purpose
+  const paymentLink = amount > 1000 ? PAYMENT_LINKS.primary : PAYMENT_LINKS.secondary;
+  
+  // Open payment link in new window
+  window.open(paymentLink, '_blank', 'width=600,height=700');
+}
+
+// Function to handle booking with payment
+async function bookServiceWithPayment(serviceDetails) {
+  const token = localStorage.getItem('token');
+  
+  if (!token) {
+    alert('Please login to book a service');
+    window.location.href = 'sign in login.html';
+    return;
+  }
+  
+  try {
+    // First, create the booking
+    const response = await fetch(`${API_URL}/api/bookings`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${token}`
+      },
+      body: JSON.stringify(serviceDetails)
+    });
+    
+    const data = await response.json();
+    
+    if (response.ok) {
+      // Booking created successfully, now initiate payment
+      alert(`Booking created! Booking ID: ${data.booking.bookingId}`);
+      
+      // Redirect to payment
+      initiatePayment(serviceDetails.amount, 'booking');
+      
+      // Store booking ID for payment verification later
+      localStorage.setItem('pendingBookingId', data.booking._id);
+    } else {
+      alert(data.message || 'Booking failed');
+    }
+  } catch (error) {
+    console.error('Booking error:', error);
+    alert('An error occurred. Please try again.');
+  }
+}
+
+// Check if user is logged in (for protected pages)
+function checkAuth() {
+  const token = localStorage.getItem('token');
+  const user = localStorage.getItem('user');
+  
+  if (!token || !user) {
+    // Redirect to login if not authenticated
+    window.location.href = 'sign in login.html';
+    return null;
+  }
+  
+  return JSON.parse(user);
+}
+
+// Logout function
+function logout() {
+  localStorage.removeItem('token');
+  localStorage.removeItem('user');
+  window.location.href = 'index.html';
+}
+
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+    </script> 
+
+
+    <div class="back-to-top" onclick="scrollToTop()">↑</div>
+    
+
+    
+</body>
+</html>

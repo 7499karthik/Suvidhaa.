@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suvidhaa - Connect with Local Service Providers</title>
+    <!-- Google Fonts Integration -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles1.css">
+   
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo" onclick="scrollToTop()">Suvidh<span>aa</span></div>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#" onclick="scrollToSection('home')">Home</a></li>
+                    <li><a href="#" onclick="scrollToSection('services')">Services</a></li>
+                    <li><a href="#" onclick="scrollToSection('how-works')">How It Works</a></li>
+                    <li><a href="#" onclick="scrollToSection('features')">About us</a></li>
+                    <li><a href="#" onclick="scrollToSection('testimonials')">Contact us</a></li>
+                    <li><a href="#" onclick="openProviderModal()" class="btn btn-outline1">Become a Provider</a></li>
+                    <li><a href="#" onclick="openLoginModal()" class="btn btn-outline1">Login / Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Local Services, Delivered with Care</h1>
+                <p>Connect with trusted service providers in your neighborhood for all your home and personal needs.</p>
+                <a href="#" class="btn btn-lg" onclick="scrollToSection('services')">Find Services</a>
+            </div>
+        </div>
+    </section>
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Join Our Growing Community</h2>
+                <p>Whether you're looking for quality services or want to offer your professional skills, Suvidhaa is the platform that brings people together.</p>
+                <a href="#" class="btn btn-lg" onclick="openProviderModal()">Find Services</a>
+                <a href="#" class="btn btn-outline btn-lg">Become a Provider</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="logo" onclick="scrollToTop()">Suvidh<span>aa</span></div>
+                    <p>Connecting quality service providers with customers seeking reliable home services.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">f</a>
+                        <a href="#" class="social-link">X</a>
+                        <a href="#" class="social-link">in</a>
+                        <a href="#" class="social-link">ig</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">How It Works</a></li>
+                        <li><a href="#">Become a Provider</a></li>
+                        <!-- <li><a href="#">Blog</a></li> -->
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Popular Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Plumbing</a></li>
+                        <li><a href="#">Electrician</a></li>
+                        <li><a href="#">Home Cleaning</a></li>
+                        <li><a href="#">Painting</a></li>
+                        <!-- <li><a href="#">Carpentry</a></li> -->
+                        <li><a href="#">Beauty & Spa</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">Support Center</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Newsletter</h3>
+                    <div class="newsletter">
+                        <p>Subscribe to get updates on new services and exclusive offers.</p>
+                        <form class="newsletter-form">
+                            <input type="email" class="newsletter-input" placeholder="Your Email Address">
+                            <button type="submit" class="newsletter-btn">→</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Suvidhaa. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="back-to-top" onclick="scrollToTop()">↑</div>
+    
+
+    <script>
+        // Mobile menu toggle
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            const hamburger = document.querySelector('.hamburger');
+            navLinks.classList.toggle('nav-active');
+            hamburger.classList.toggle('toggle');
+        }
+
+        // Scroll to section
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Scroll to top
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Modal functions
+        function openProviderModal() {
+            document.getElementById('providerModal').style.display = 'block';
+        }
+
+        function closeProviderModal() {
+            document.getElementById('providerModal').style.display = 'none';
+        }
+
+        function openLoginModal() {
+            document.getElementById('loginModal').style.display = 'block';
+        }
+
+        function closeLoginModal() {
+            document.getElementById('loginModal').style.display = 'none';
+        }
+
+        // Search services
+        function searchServices() {
+            const service = document.getElementById('service-select').value;
+            const location = document.getElementById('location-input').value;
+            
+            if (service && location) {
+                alert(`Searching for ${service} services in ${location}`);
+                // In a real app, this would redirect to search results
+            } else {
+                alert('Please select a service and enter your location');
+            }
+        }
+
+        // View service details
+        function viewServiceDetails(service) {
+            alert(`View details for ${service} service`);
+            // In a real app, this would open the service details page
+        }
+
+        // Book service
+        function bookService(service) {
+            openLoginModal();
+            // In a real app, this would check if user is logged in,
+            // and then redirect to booking page or open login modal
+        }
+
+        // Back to top button visibility
+        window.addEventListener('scroll', function() {
+            const backToTopButton = document.querySelector('.back-to-top');
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('visible');
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        });
+
+        // Close modals when clicking outside
+        window.addEventListener('click', function(event) {
+            const providerModal = document.getElementById('providerModal');
+            const loginModal = document.getElementById('loginModal');
+            
+            if (event.target === providerModal) {
+                closeProviderModal();
+            }
+            
+            if (event.target === loginModal) {
+                closeLoginModal();
+            }
+        });
+    </script>
+</body>
+</html>

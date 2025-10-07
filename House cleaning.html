@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Cleaning Services - Suvidhaa</title>
+    <!-- Google Fonts Integration -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo" onclick="scrollToTop()">Suvidh<span>aa</span></div>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html" onclick="scrollToSection('home')">Home</a></li>
+                    <li><a href="Painting.html" onclick="scrollToSection('services')">Services</a></li>
+                    <li><a href="How it works.html" onclick="scrollToSection('how-works')">How It Works</a></li>
+                    <!-- <li><a href="about us.html" onclick="scrollToSection('features')">About us</a></li>
+                    <li><a href="contact us.html" onclick="scrollToSection('testimonials')">Contact us</a></li> -->
+                    <li><a href="provider.html" onclick="openProviderModal()" class="btn btn-outline1">Become a Provider</a></li>
+                    <li><a href="sign in login.html" onclick="openLoginModal()" class="btn btn-outline1">Login / Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="service-hero">
+        <div class="container">
+            <div class="service-hero-content">
+                <h1>Professional House Cleaning Services</h1>
+                <p>Transform your living space with our expert cleaning solutions. Our trained professionals deliver spotless results for homes of all sizes.</p>
+                <a href="#book-now" class="btn btn-lg">Book Service Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="service-overview">
+                <div class="service-details">
+                    <h2>Service Overview</h2>
+                    <p>Our comprehensive house cleaning service covers every corner of your home, ensuring a pristine and healthy living environment. From daily maintenance to deep cleaning sessions, our trained professionals use quality products and equipment to deliver exceptional results.</p>
+                    
+                    <h3>Our House Cleaning Services Include:</h3>
+                    <ul>
+                        <li>Regular Home Cleaning</li>
+                        <li>Deep Cleaning</li>
+                        <li>Move-in/Move-out Cleaning</li>
+                        <li>Kitchen & Bathroom Sanitization</li>
+                        <li>Carpet & Upholstery Cleaning</li>
+                        <li>Window & Glass Cleaning</li>
+                        <li>Post-Construction Cleaning</li>
+                        <li>Specialized Cleaning Services</li>
+                    </ul>
+                    
+                    <div class="service-highlights">
+                        <div class="highlight">
+                            <h4>✓ Eco-Friendly Options</h4>
+                            <p>We offer green cleaning solutions that are safe for your family and pets.</p>
+                        </div>
+                        <div class="highlight">
+                            <h4>✓ 100% Satisfaction Guarantee</h4>
+                            <p>If you're not completely satisfied, we'll re-clean any missed areas.</p>
+                        </div>
+                        <div class="highlight">
+                            <h4>✓ Verified & Background-Checked Staff</h4>
+                            <p>All our cleaning professionals undergo thorough screening and training.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-image1">
+                    <img src="/api/placeholder/400/300" alt="House Cleaning Service">
+                </div>
+            </div>
+            
+            <div class="service-pricing">
+                <h2>Transparent Pricing</h2>
+                <p>Our house cleaning services are priced clearly with no hidden charges. Choose the package that fits your needs.</p>
+                
+                <div class="pricing-tables">
+                    <div class="pricing-option">
+                        <h3>Basic Cleaning</h3>
+                        <div class="price">₹699</div>
+                        <div class="price-details">For 1BHK apartments</div>
+                        <ul>
+                            <li>Dusting & Wiping Surfaces</li>
+                            <li>Vacuum Cleaning</li>
+                            <li>Bathroom Cleaning</li>
+                            <li>Kitchen Countertop Cleaning</li>
+                            <li>Floor Mopping</li>
+                        </ul>
+                        <a href="#book-now" class="btn">Book Now</a>
+                    </div>
+                    
+                    <div class="pricing-option">
+                        <h3>Standard Cleaning</h3>
+                        <div class="price">₹1199</div>
+                        <div class="price-details">For 2-3BHK homes</div>
+                        <ul>
+                            <li>All Basic Cleaning Services</li>
+                            <li>Inside Cabinet Cleaning</li>
+                            <li>Appliance Exterior Cleaning</li>
+                            <li>Furniture Dusting & Polishing</li>
+                            <li>Window Sill Cleaning</li>
+                            <li>Baseboard Cleaning</li>
+                        </ul>
+                        <a href="booking.html" class="btn">Book Now</a>
+                    </div>
+                    
+                    <div class="pricing-option">
+                        <h3>Deep Cleaning</h3>
+                        <div class="price">₹2499</div>
+                        <div class="price-details">Comprehensive deep clean</div>
+                        <ul>
+                            <li>All Standard Cleaning Services</li>
+                            <li>Deep Carpet Cleaning</li>
+                            <li>Upholstery Cleaning</li>
+                            <li>Inside Refrigerator Cleaning</li>
+                            <li>Oven & Microwave Cleaning</li>
+                            <li>Window & Glass Cleaning</li>
+                            <li>Grout Cleaning</li>
+                        </ul>
+                        <a href="booking.html" class="btn">Book Now</a>
+                    </div>
+                </div>
+                
+                <p style="margin-top: 20px; font-size: 0.9rem;">* Pricing may vary based on the size of your home and specific requirements. Our supervisor will provide an exact quote after assessment.</p>
+            </div>
+            
+            <div class="provider-profiles">
+                <h2>Meet Our Top Cleaning Professionals</h2>
+                <p>Our service providers are verified experts with extensive experience in house cleaning.</p>
+                
+                <div class="provider-cards">
+                    <div class="provider-card">
+                        <div class="provider-header">
+                            <div class="provider-avatar">
+                                <img src="/api/placeholder/60/60" alt="Cleaning Professional Avatar">
+                            </div>
+                            <div class="provider-details">
+                                <h3>Anita Sharma</h3>
+                                <div class="rating">★★★★★</div>
+                                <div class="experience">8+ years experience</div>
+                            </div>
+                        </div>
+                        <div class="provider-body">
+                            <p>Specializes in deep cleaning and organization. Known for attention to detail and thorough kitchen and bathroom sanitization.</p>
+                        </div>
+                        <a href="#book-now" class="btn btn-outline" style="width: 100%; text-align: center;">Book This Pro</a>
+                    </div>
+                    
+                    <div class="provider-card">
+                        <div class="provider-header">
+                            <div class="provider-avatar">
+                                <img src="/api/placeholder/60/60" alt="Cleaning Professional Avatar">
+                            </div>
+                            <div class="provider-details">
+                                <h3>Rajesh Kumar</h3>
+                                <div class="rating">★★★★☆</div>
+                                <div class="experience">6+ years experience</div>
+                            </div>
+                        </div>
+                        <div class="provider-body">
+                            <p>Expert in move-in/move-out cleaning services. Specializes in carpet cleaning and tough stain removal solutions.</p>
+                        </div>
+                        <a href="#book-now" class="btn btn-outline" style="width: 100%; text-align: center;">Book This Pro</a>
+                    </div>
+                    
+                    <div class="provider-card">
+                        <div class="provider-header">
+                            <div class="provider-avatar">
+                                <img src="/api/placeholder/60/60" alt="Cleaning Professional Avatar">
+                            </div>
+                            <div class="provider-details">
+                                <h3>Priya Desai</h3>
+                                <div class="rating">★★★★★</div>
+                                <div class="experience">7+ years experience</div>
+                            </div>
+                        </div>
+                        <div class="provider-body">
+                            <p>Specialized in eco-friendly cleaning methods. Certified in green cleaning practices and allergen-reducing techniques.</p>
+                        </div>
+                        <a href="#book-now" class="btn btn-outline" style="width: 100%; text-align: center;">Book This Pro</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="service-steps">
+                <h2>How It Works</h2>
+                <p>Booking a house cleaning service with Suvidhaa is simple and convenient.</p>
+                
+                <div class="step-cards">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <h3>Book a Service</h3>
+                        <p>Select your cleaning package and choose a convenient date and time.</p>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <h3>Professional Assignment</h3>
+                        <p>We'll assign verified cleaning professionals based on your requirements.</p>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <h3>Cleaning Execution</h3>
+                        <p>Our team arrives on time with all necessary equipment and supplies.</p>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">4</div>
+                        <h3>Quality Check & Payment</h3>
+                        <p>Verify the cleaning quality and make a secure payment upon satisfaction.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-section">
+                <h2>Frequently Asked Questions</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-question">How long does a typical cleaning session take?</div>
+                    <div class="faq-answer">The duration depends on the size of your home and the cleaning package selected. A basic cleaning for a 1BHK apartment typically takes 2-3 hours, while deep cleaning for larger homes can take 5-8 hours. Our team will provide an estimated timeframe when you book.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">What cleaning products do you use?</div>
+                    <div class="faq-answer">We use professional-grade cleaning products that are effective yet safe. We also offer eco-friendly and hypoallergenic options upon request. If you have specific products you prefer, our team can use those as well.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Do I need to provide any equipment or supplies?</div>
+                    <div class="faq-answer">No, our cleaning professionals bring all necessary equipment and supplies including vacuum cleaners, mops, microfiber cloths, and cleaning solutions. However, if you have specialized cleaning tools for specific items in your home, you can make them available.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Is it safe to leave my home during the cleaning?</div>
+                    <div class="faq-answer">Yes, all our cleaning professionals are background-checked, verified, and insured. You can be present or leave during the cleaning process. Many customers prefer to provide access instructions and return to a clean home.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Do you offer recurring cleaning services?</div>
+                    <div class="faq-answer">Absolutely! We offer weekly, bi-weekly, and monthly recurring cleaning services at discounted rates. Regular cleaning schedules help maintain a consistently clean home and you can save up to 20% compared to one-time bookings.</div>
+                </div>
+            </div>
+            
+            <div class="related-services">
+                <h2>Related Services</h2>
+                <div class="services-grid">
+                    <div class="service-card" onclick="viewServiceDetails('electrician')">
+                        <div class="service-img">
+                            <img src="/api/placeholder/400/250" alt="Electrician Services">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-rating">★★★★★</div>
+                            <h3>Electrician</h3>
+                            <p>Professional electrical repair and installation services.</p>
+                            <div class="service-price">Starting from ₹399</div>
+                            <a href="booking.html" class="btn btn-outline" onclick="event.stopPropagation(); bookService('electrician')">Book Now</a>
+                        </div>
+                    </div>
+
+                    <div class="service-card" onclick="viewServiceDetails('plumbing')">
+                        <div class="service-img">
+                            <img src="/api/placeholder/400/250" alt="Plumbing Services">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-rating">★★★★★</div>
+                            <h3>Plumbing</h3>
+                            <p>Expert plumbers for all your water system needs.</p>
+                            <div class="service-price">Starting from ₹499</div>
+                            <a href="booking.html" class="btn btn-outline" onclick="event.stopPropagation(); bookService('plumbing')">Book Now</a>
+                        </div>
+                    </div>
+
+                    <div class="service-card" onclick="viewServiceDetails('painting')">
+                        <div class="service-img">
+                            <img src="/api/placeholder/400/250" alt="Painting Services">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-rating">★★★★☆</div>
+                            <h3>Home Painting</h3>
+                            <p>Transform your space with professional painting services.</p>
+                            <div class="service-price">Starting from ₹999</div>
+                            <a href="booking.html" class="btn btn-outline" onclick="event.stopPropagation(); bookService('painting')">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cta-booking" id="book-now">
+                <h2>Book Your House Cleaning Service Now</h2>
+                <p>Our cleaning professionals are ready to transform your space. Schedule a service at your convenience.</p>
+                
+                <div class="booking-form">
+                    <form id="service-booking-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="service-type">Cleaning Package</label>
+                                <select id="service-type" required>
+                                    <option value="">Select Package</option>
+                                    <option value="basic-cleaning">Basic Cleaning</option>
+                                    <option value="standard-cleaning">Standard Cleaning</option>
+                                    <option value="deep-cleaning">Deep Cleaning</option>
+                                    <option value="move-in-out">Move In/Out Cleaning</option>
+                                    <option value="post-construction">Post Construction Cleaning</option>
+                                    <option value="carpet-cleaning">Carpet & Upholstery Cleaning</option>
+                                    <option value="other">Other Specialized Cleaning</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="service-date">Preferred Date</label>
+                                <input type="date" id="service-date" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="service-time">Preferred Time</label>
+                                <select id="service-time" required>
+                                    <option value="">Select Time Slot</option>
+                                    <option value="morning">Morning (8:00 AM - 12:00 PM)</option>
+                                    <option value="afternoon">Afternoon (12:00 PM - 4:00 PM)</option>
+                                    <option value="evening">Evening (4:00 PM - 8:00 PM)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="home-size">Home Size</label>
+                                <select id="home-size" required>
+                                    <option value="">Select Home Size</option>
+                                    <option value="1bhk">1 BHK</option>
+                                    <option value="2bhk">2 BHK</option>
+                                    <option value="3bhk">3 BHK</option>
+                                    <option value="4bhk">4+ BHK</option>
+                                    <option value="bungalow">Bungalow/Villa</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="customer-name">Full Name</label>
+                                <input type="text" id="customer-name" placeholder="Your full name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="customer-phone">Phone Number</label>
+                                <input type="tel" id="customer-phone" placeholder="Your contact number" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="customer-address">Address</label>
+                                <input type="text" id="customer-address" placeholder="Cleaning location address" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="special-instructions">Special Instructions</label>
+                                <textarea id="special-instructions" placeholder="Any specific areas that need attention or special instructions"></textarea>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Additional Services</label>
+                                <div class="checkbox-group">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="additional-services" value="fridge"> Inside Refrigerator Cleaning (+₹299)
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="additional-services" value="windows"> Window & Glass Cleaning (+₹399)
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="additional-services" value="eco"> Eco-Friendly Products (+₹199)
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="additional-services" value="balcony"> Balcony & Outdoor Cleaning (+₹299)
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <button type="submit" class="btn btn-lg" style="width: 100%;">Book Service Now</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Join Our Growing Community</h2>
+                <p class="cta-p">Whether you're looking for quality services or want to offer your professional skills, Suvidhaa is the platform that brings people together.</p>
+                <a href="#" class="btn btn-lg" onclick="openProviderModal()">Find Services</a>
+                <a href="#" class="btn btn-outline btn-lg">Become a Provider</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="logo" onclick="scrollToTop()">Suvidh<span>aa</span></div>
+                    <p>Connecting quality service providers with customers seeking reliable home services.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">f</a>
+                        <a href="#" class="social-link">X</a>
+                        <a href="https://www.instagram.com/suvidhaa.shop/" class="social-link">in</a>
+                        <a href="#" class="social-link">ig</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">How It Works</a></li>
+                        <li><a href="#">Become a Provider</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Popular Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Plumbing</a></li>
+                        <li><a href="#">Electrician</a></li>
+                        <li><a href="#">Home Cleaning</a></li>
+                        <li><a href="#">Painting</a></li>
+                        <li><a href="#">Beauty & Spa</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">Support Center</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Newsletter</h3>
+                    <div class="newsletter">
+                        <p>Subscribe to get updates on new services and exclusive offers.</p>
+                        <form class="newsletter-form">
+                            <input type="email" class="newsletter-input" placeholder="Your Email Address">
+                            <button type="submit" class="newsletter-btn">→</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Suvidhaa. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="back-to-top" onclick="scrollToTop()">↑</div>
+
+    <script>
+        // JavaScript to handle FAQ toggles
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentNode;
+                faqItem.classList.toggle('active');
+            });
+        });
+
+        // Function to scroll to top
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Function to toggle mobile menu
+        function toggleMenu() {
+            document.querySelector('.nav-links').classList.toggle('nav-active');
+            document.querySelector('.hamburger').classList.toggle('toggle');
+        }
+
+        // Functions to handle section scrolling
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+            // Close mobile menu if open
+            document.querySelector('.nav-links').classList.remove('nav-active');
+            document.querySelector('.hamburger').classList.remove('toggle');
+        }
+
+        // Functions for service navigation
+        function viewServiceDetails(serviceType) {
+            // Navigate to service detail page
+            console.log(`Viewing ${serviceType} service details`);
+            // Add actual navigation logic here
+        }
+
+        function bookService(serviceType) {
+            // Navigate to booking page for specific service
+            console.log(`Booking ${serviceType} service`);
+            // Add actual booking logic here
+        }
+
+        // Functions for modal dialogs
+        function openLoginModal() {
+            // Open login modal
+            console.log('Opening login modal');
+            // Add actual modal opening logic here
+        }
+
+        function openProviderModal() {
+            // Open provider registration modal
+            console.log('Opening provider registration modal');
+            // Add actual modal opening logic here
+        }
+
+        // Form submission handling
+        document.getElementById('service-booking-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Handle form submission
+            console.log('Booking form submitted');
+            // Add actual form submission logic here
+            alert('Thank you for booking our cleaning service! We will contact you shortly to confirm your appointment.');
+        });
+
+        // Back to top button visibility
+        window.addEventListener('scroll', function() {
+            const backToTopButton = document.querySelector('.back-to-top');
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('visible');
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        });
+    </script>
+</body>
+</html>

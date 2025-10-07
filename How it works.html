@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How It Works - Suvidhaa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">Suvidh<span>aa</span></div>
+                <ul class="nav-links">
+                    <li><a href="index.html" onclick="scrollToSection('home')">Home</a></li>
+                    <li><a href="Painting.html" onclick="scrollToSection('services')">Services</a></li>
+                    <li><a href="How it works.html" onclick="scrollToSection('how-works')">How It Works</a></li>
+                    <!-- <li><a href="about us.html" onclick="scrollToSection('features')">About us</a></li>
+                    <li><a href="contact us.html" onclick="scrollToSection('testimonials')">Contact us</a></li> -->
+                    <li><a href="provider.html" onclick="openProviderModal()" class="btn btn-outline1">Become a Provider</a></li>
+                    <li><a href="sign in login.html" onclick="openLoginModal()" class="btn btn-outline1">Login / Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/api/placeholder/1200/600') center/cover no-repeat; height: 400px;">
+        <div class="container">
+            <div class="hero-content">
+                <h1>How Suvidhaa Works</h1>
+                <p>Your complete guide to finding and booking trusted local service providers</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section how-works">
+        <div class="container">
+            <div class="section-header">
+                <h2>Three Simple Steps</h2>
+                <p>Connecting with quality service providers has never been easier</p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-icon">1</div>
+                    <h3>Choose a Service</h3>
+                    <p>Browse through our wide range of services and select what you need. Filter by location, price, and ratings to find the perfect match.</p>
+                </div>
+
+                <div class="step">
+                    <div class="step-icon">2</div>
+                    <h3>Book an Appointment</h3>
+                    <p>Schedule a convenient time for the service provider to visit. Receive instant confirmation and reminders before your appointment.</p>
+                </div>
+
+                <div class="step">
+                    <div class="step-icon">3</div>
+                    <h3>Get it Done</h3>
+                    <p>Our verified professionals will provide quality service at your doorstep. Pay securely through our platform after the job is completed to your satisfaction.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Detailed Process</h2>
+                <p>Everything you need to know about booking services through Suvidhaa</p>
+            </div>
+            
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div style="background: white; border-radius: 10px; padding: 30px; margin-bottom: 30px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);">
+                    <h3 style="color: #4a6bfa; margin-bottom: 15px;">1. Finding the Right Service</h3>
+                    <p style="margin-bottom: 15px;">Start by visiting our homepage or using the search function to find the service you need. You can browse by category or search directly for specific services.</p>
+                    <ul style="margin-left: 20px; margin-bottom: 15px;">
+                        <li style="margin-bottom: 8px;">Enter your location to find providers in your area</li>
+                        <li style="margin-bottom: 8px;">Filter results by price range, ratings, or availability</li>
+                        <li style="margin-bottom: 8px;">View detailed profiles of service providers including their qualifications, experience, and customer reviews</li>
+                    </ul>
+                    <div style="text-align: center; margin: 20px 0;">
+                        <img src="/api/placeholder/700/300" alt="Service Search Process" style="max-width: 100%; border-radius: 8px;">
+                    </div>
+                </div>
+                
+                <div style="background: white; border-radius: 10px; padding: 30px; margin-bottom: 30px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);">
+                    <h3 style="color: #4a6bfa; margin-bottom: 15px;">2. Booking and Scheduling</h3>
+                    <p style="margin-bottom: 15px;">Once you've found your preferred service provider, booking an appointment is quick and easy.</p>
+                    <ul style="margin-left: 20px; margin-bottom: 15px;">
+                        <li style="margin-bottom: 8px;">Select your preferred date and time from the provider's available slots</li>
+                        <li style="margin-bottom: 8px;">Add any specific requirements or instructions for the service provider</li>
+                        <li style="margin-bottom: 8px;">Receive instant confirmation via email and SMS</li>
+                        <li style="margin-bottom: 8px;">Get reminders 24 hours before your scheduled appointment</li>
+                    </ul>
+                    <div style="text-align: center; margin: 20px 0;">
+                        <img src="/api/placeholder/700/300" alt="Booking Process" style="max-width: 100%; border-radius: 8px;">
+                    </div>
+                </div>
+                
+                <div style="background: white; border-radius: 10px; padding: 30px; margin-bottom: 30px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);">
+                    <h3 style="color: #4a6bfa; margin-bottom: 15px;">3. Service Delivery</h3>
+                    <p style="margin-bottom: 15px;">On the day of your appointment, your service provider will arrive at the scheduled time.</p>
+                    <ul style="margin-left: 20px; margin-bottom: 15px;">
+                        <li style="margin-bottom: 8px;">Receive notifications when the provider is on their way</li>
+                        <li style="margin-bottom: 8px;">Track their arrival in real-time through our app</li>
+                        <li style="margin-bottom: 8px;">Service providers come with proper identification and necessary tools</li>
+                        <li style="margin-bottom: 8px;">All work is performed according to the agreed-upon terms</li>
+                    </ul>
+                    <div style="text-align: center; margin: 20px 0;">
+                        <img src="/api/placeholder/700/300" alt="Service Delivery" style="max-width: 100%; border-radius: 8px;">
+                    </div>
+                </div>
+                
+                <div style="background: white; border-radius: 10px; padding: 30px; margin-bottom: 30px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);">
+                    <h3 style="color: #4a6bfa; margin-bottom: 15px;">4. Payment and Feedback</h3>
+                    <p style="margin-bottom: 15px;">After the service is completed, you can complete the transaction securely through our platform.</p>
+                    <ul style="margin-left: 20px; margin-bottom: 15px;">
+                        <li style="margin-bottom: 8px;">Pay securely using credit/debit cards, digital wallets, or UPI</li>
+                        <li style="margin-bottom: 8px;">Receive digital receipts and invoices instantly</li>
+                        <li style="margin-bottom: 8px;">Rate your service provider and provide feedback on your experience</li>
+                        <li style="margin-bottom: 8px;">Your reviews help maintain quality and assist other users in making informed decisions</li>
+                    </ul>
+                    <div style="text-align: center; margin: 20px 0;">
+                        <img src="/api/placeholder/700/300" alt="Payment and Feedback" style="max-width: 100%; border-radius: 8px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Answers to common questions about using Suvidhaa</p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How do I know the service providers are trustworthy?</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>All service providers on our platform undergo a thorough verification process that includes identity verification, background checks, and skill assessment. Additionally, you can read reviews from other customers to make an informed decision.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What if I need to reschedule or cancel my appointment?</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can easily reschedule or cancel your appointment through our website or app up to 4 hours before the scheduled time without any penalty. For cancellations made less than 4 hours in advance, a small cancellation fee may apply.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is there a guarantee for the services provided?</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, all services booked through Suvidhaa come with our satisfaction guarantee. If you're not satisfied with the quality of service, you can report it within 48 hours, and we'll arrange for the issue to be resolved or provide a refund.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How are service prices determined?</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Service providers set their own prices based on their expertise, experience, and market rates. We ensure that all prices are transparent and communicated upfront before you book the service. There are no hidden charges.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What areas do you currently serve?</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Suvidhaa is currently available in major cities across India including Delhi, Mumbai, Bangalore, Chennai, Hyderabad, Kolkata, Pune, and their surrounding areas. We're rapidly expanding to new locations - check our app for the latest coverage areas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<section class="cta">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Join Our Growing Community</h2>
+            <p>Whether you're looking for quality services or want to offer your professional skills, Suvidhaa is the platform that brings people together.</p>
+            <a href="#" class="btn btn-lg">Find Services</a>
+            <a href="#" class="btn btn-outline btn-lg">Become a Provider</a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-column">
+                <!-- <h3>Suvidhaa</h3> -->
+                <div class="logo">Suvidh<span>aa</span></div>
+                <p>Connecting communities through quality service.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link">f</a>
+                    <a href="#" class="social-link">t</a>
+                    <a href="#" class="social-link">in</a>
+                    <a href="#" class="social-link">i</a>
+                </div>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Services</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Home Services</a></li>
+                    <li><a href="#">Professional Services</a></li>
+                    <li><a href="#">Health & Wellness</a></li>
+                    <li><a href="#">Education & Tutoring</a></li>
+                    <li><a href="#">Events & Occasions</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Company</h3>
+                <ul class="footer-links">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">How It Works</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Support</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Safety</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Suvidhaa. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

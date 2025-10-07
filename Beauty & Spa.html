@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty & Spa Services - Suvidhaa</title>
+    <!-- Google Fonts Integration -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo" onclick="scrollToTop()">Suvidh<span>aa</span></div>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html" onclick="scrollToSection('home')">Home</a></li>
+                    <li><a href="Painting.html" onclick="scrollToSection('services')">Services</a></li>
+                    <li><a href="How it works.html" onclick="scrollToSection('how-works')">How It Works</a></li>
+                    <!-- <li><a href="about us.html" onclick="scrollToSection('features')">About us</a></li>
+                    <li><a href="contact us.html" onclick="scrollToSection('testimonials')">Contact us</a></li> -->
+                    <li><a href="provider.html" onclick="openProviderModal()" class="btn btn-outline1">Become a Provider</a></li>
+                    <li><a href="sign in login.html" onclick="openLoginModal()" class="btn btn-outline1">Login / Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="service-hero">
+        <div class="container">
+            <div class="service-hero-content">
+                <h1>Premium Beauty & Spa Services</h1>
+                <p>Experience professional beauty treatments and relaxing spa therapies in the comfort of your home. Our certified beauty experts bring salon-quality services to your doorstep.</p>
+                <a href="#book-now" class="btn btn-lg">Book Service Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="service-overview">
+                <div class="service-details">
+                    <h2>Service Overview</h2>
+                    <p>Our Beauty & Spa services offer a wide range of treatments to help you look and feel your best. Whether you need a quick beauty fix or an indulgent spa experience, our professionals bring everything needed to create a luxurious atmosphere right in your home.</p>
+                    
+                    <h3>Our Beauty & Spa Services Include:</h3>
+                    <ul>
+                        <li>Facial Treatments & Skincare</li>
+                        <li>Hair Styling & Treatments</li>
+                        <li>Manicure & Pedicure</li>
+                        <li>Waxing & Hair Removal</li>
+                        <li>Body Massage & Therapies</li>
+                        <li>Bridal & Special Occasion Packages</li>
+                        <li>Aromatherapy & Wellness</li>
+                        <li>Men's Grooming Services</li>
+                    </ul>
+                    
+                    <div class="service-highlights">
+                        <div class="highlight">
+                            <h4>✓ Professional Products</h4>
+                            <p>Our experts use salon-grade products that suit your skin and hair type.</p>
+                        </div>
+                        <div class="highlight">
+                            <h4>✓ Hygienic Practices</h4>
+                            <p>We maintain strict hygiene protocols with sanitized equipment for every service.</p>
+                        </div>
+                        <div class="highlight">
+                            <h4>✓ Certified Beauticians</h4>
+                            <p>All our beauty professionals are certified with years of experience.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-image1">
+                    <img src="/api/placeholder/400/300" alt="Beauty & Spa Service">
+                </div>
+            </div>
+            
+            <div class="service-pricing">
+                <h2>Transparent Pricing</h2>
+                <p>Our beauty and spa services come with clear, upfront pricing. No hidden charges or surprises.</p>
+                
+                <div class="pricing-tables">
+                    <div class="pricing-option">
+                        <h3>Essential Beauty</h3>
+                        <div class="price">₹699</div>
+                        <div class="price-details">Basic beauty treatments</div>
+                        <ul>
+                            <li>Express Facial</li>
+                            <li>Basic Manicure</li>
+                            <li>Threading Services</li>
+                            <li>Hair Styling (Blow Dry)</li>
+                        </ul>
+                        <a href="booking.html" class="btn">Book Now</a>
+                
+                    </div>
+                    
+                    <div class="pricing-option">
+                        <h3>Signature Spa</h3>
+                        <div class="price">₹1499</div>
+                        <div class="price-details">Popular spa treatments</div>
+                        <ul>
+                            <li>Classic Facial</li>
+                            <li>Spa Manicure & Pedicure</li>
+                            <li>60-min Body Massage</li>
+                            <li>Hair Spa Treatment</li>
+                            <li>Full Body Waxing</li>
+                        </ul>
+                        <a href="booking.html" class="btn">Book Now</a>
+                    </div>
+                    
+                    <div class="pricing-option">
+                        <h3>Luxury Retreat</h3>
+                        <div class="price">₹2999</div>
+                        <div class="price-details">Premium beauty experience</div>
+                        <ul>
+                            <li>Advanced Facial Treatment</li>
+                            <li>Luxury Mani-Pedi with Gel</li>
+                            <li>90-min Aromatherapy Massage</li>
+                            <li>Hair Coloring & Styling</li>
+                            <li>Body Polishing & Scrub</li>
+                        </ul>
+                        <a href="booking.html" class="btn">Book Now</a>
+                    </div>
+                </div>
+                
+                <p style="margin-top: 20px; font-size: 0.9rem;">* Final pricing may vary based on specific treatment requirements and product usage. Our beautician will provide an exact quote after consultation.</p>
+            </div>
+            
+            <div class="provider-profiles">
+                <h2>Meet Our Top Beauty Professionals</h2>
+                <p>Our beauty and spa experts are verified professionals with extensive experience in their specializations.</p>
+                
+                <div class="provider-cards">
+                    <div class="provider-card">
+                        <div class="provider-header">
+                            <div class="provider-avatar">
+                                <img src="/api/placeholder/60/60" alt="Beauty Expert Avatar">
+                            </div>
+                            <div class="provider-details">
+                                <h3>Neha Sharma</h3>
+                                <div class="rating">★★★★★</div>
+                                <div class="experience">8+ years experience</div>
+                            </div>
+                        </div>
+                        <div class="provider-body">
+                            <p>Expert in facial treatments and skincare. Specializes in anti-aging treatments and personalized skincare routines for all skin types.</p>
+                        </div>
+                        <a href="#book-now" class="btn btn-outline" style="width: 100%; text-align: center;">Book This Pro</a>
+                    </div>
+                    
+                    <div class="provider-card">
+                        <div class="provider-header">
+                            <div class="provider-avatar">
+                                <img src="/api/placeholder/60/60" alt="Beauty Expert Avatar">
+                            </div>
+                            <div class="provider-details">
+                                <h3>Arjun Mehta</h3>
+                                <div class="rating">★★★★☆</div>
+                                <div class="experience">6+ years experience</div>
+                            </div>
+                        </div>
+                        <div class="provider-body">
+                            <p>Massage therapist specializing in deep tissue, Swedish and aromatherapy massages. Known for relieving stress and muscle tension effectively.</p>
+                        </div>
+                        <a href="#book-now" class="btn btn-outline" style="width: 100%; text-align: center;">Book This Pro</a>
+                    </div>
+                    
+                    <div class="provider-card">
+                        <div class="provider-header">
+                            <div class="provider-avatar">
+                                <img src="/api/placeholder/60/60" alt="Beauty Expert Avatar">
+                            </div>
+                            <div class="provider-details">
+                                <h3>Priya Kapoor</h3>
+                                <div class="rating">★★★★★</div>
+                                <div class="experience">10+ years experience</div>
+                            </div>
+                        </div>
+                        <div class="provider-body">
+                            <p>Expert in bridal makeup, hair styling and manicure-pedicure. Specializes in creating customized looks for special occasions and events.</p>
+                        </div>
+                        <a href="#book-now" class="btn btn-outline" style="width: 100%; text-align: center;">Book This Pro</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="service-steps">
+                <h2>How It Works</h2>
+                <p>Booking a beauty or spa service with Suvidhaa is simple and convenient.</p>
+                
+                <div class="step-cards">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <h3>Book a Service</h3>
+                        <p>Select the beauty service you need and choose a convenient time slot.</p>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <h3>Professional Assignment</h3>
+                        <p>We'll assign a verified beauty expert based on your requirement.</p>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <h3>Service Delivery</h3>
+                        <p>Our professional will arrive at your doorstep with all necessary equipment and products.</p>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">4</div>
+                        <h3>Payment & Feedback</h3>
+                        <p>Pay securely after the service and share your experience.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-section">
+                <h2>Frequently Asked Questions</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-question">What products do your beauticians use?</div>
+                    <div class="faq-answer">Our beauty professionals use salon-grade products from trusted brands that are suitable for various skin and hair types. If you have specific product preferences or allergies, please mention them during booking, and our beauticians will accommodate accordingly.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">How do you ensure hygiene during services?</div>
+                    <div class="faq-answer">We maintain strict hygiene protocols. All our tools and equipment are sanitized before each service, and our beauticians follow proper sanitization practices. They use disposable items where necessary and fresh linens for each client.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Can I request a specific beautician for my service?</div>
+                    <div class="faq-answer">Yes, if you've been serviced by one of our beauticians before and would like to request them again, you can mention their name during booking. We'll try our best to accommodate your request based on the beautician's availability.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Do you offer services for special occasions like weddings?</div>
+                    <div class="faq-answer">Yes, we offer special bridal packages and group services for weddings and other special occasions. These can be customized based on your requirements. We recommend booking these services well in advance to ensure availability.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">What should I prepare before the beautician arrives?</div>
+                    <div class="faq-answer">For most services, you'll just need a clean, well-lit space. For spa treatments, having a quiet area would be beneficial. Our beauticians bring all necessary equipment and products. Specific preparation instructions may be sent to you before the appointment, depending on the service booked.</div>
+                </div>
+            </div>
+            
+            <div class="related-services">
+                <h2>Related Services</h2>
+                <div class="services-grid">
+                    <div class="service-card" onclick="viewServiceDetails('massage')">
+                        <div class="service-img">
+                            <img src="/api/placeholder/400/250" alt="Massage Therapy">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-rating">★★★★★</div>
+                            <h3>Massage Therapy</h3>
+                            <p>Specialized massage techniques for relaxation and wellness.</p>
+                            <div class="service-price">Starting from ₹899</div>
+                            <a href="booking.html" class="btn btn-outline" onclick="event.stopPropagation(); bookService('massage')">Book Now</a>
+                        </div>
+                    </div>
+
+                    <div class="service-card" onclick="viewServiceDetails('makeup')">
+                        <div class="service-img">
+                            <img src="/api/placeholder/400/250" alt="Professional Makeup">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-rating">★★★★★</div>
+                            <h3>Professional Makeup</h3>
+                            <p>Makeup services for special occasions and events.</p>
+                            <div class="service-price">Starting from ₹1299</div>
+                            <a href="booking.html" class="btn btn-outline" onclick="event.stopPropagation(); bookService('makeup')">Book Now</a>
+                        </div>
+                    </div>
+
+                    <div class="service-card" onclick="viewServiceDetails('hairstyling')">
+                        <div class="service-img">
+                            <img src="/api/placeholder/400/250" alt="Hair Styling">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-rating">★★★★☆</div>
+                            <h3>Hair Styling</h3>
+                            <p>Professional cuts, coloring, and styling by expert stylists.</p>
+                            <div class="service-price">Starting from ₹799</div>
+                            <a href="booking.html" class="btn btn-outline" onclick="event.stopPropagation(); bookService('hairstyling')">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cta-booking" id="book-now">
+                <h2>Book Your Beauty & Spa Service Now</h2>
+                <p>Our professionals are ready to help you look and feel your best. Schedule a service at your convenience.</p>
+                
+                <div class="booking-form">
+                    <form id="service-booking-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="service-type">Service Type</label>
+                                <select id="service-type" required>
+                                    <option value="">Select Service Type</option>
+                                    <option value="facial">Facial Treatment</option>
+                                    <option value="massage">Body Massage</option>
+                                    <option value="manicure-pedicure">Manicure & Pedicure</option>
+                                    <option value="hair-treatment">Hair Treatment</option>
+                                    <option value="makeup">Makeup & Styling</option>
+                                    <option value="waxing">Waxing & Hair Removal</option>
+                                    <option value="bridal">Bridal Package</option>
+                                    <option value="other">Other Beauty Services</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="service-date">Preferred Date</label>
+                                <input type="date" id="service-date" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="service-time">Preferred Time</label>
+                                <select id="service-time" required>
+                                    <option value="">Select Time Slot</option>
+                                    <option value="morning">Morning (8:00 AM - 12:00 PM)</option>
+                                    <option value="afternoon">Afternoon (12:00 PM - 4:00 PM)</option>
+                                    <option value="evening">Evening (4:00 PM - 8:00 PM)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="service-package">Package Type</label>
+                                <select id="service-package" required>
+                                    <option value="essential">Essential Beauty (₹699)</option>
+                                    <option value="signature">Signature Spa (₹1499)</option>
+                                    <option value="luxury">Luxury Retreat (₹2999)</option>
+                                    <option value="custom">Custom Service (Price Varies)</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="customer-name">Full Name</label>
+                                <input type="text" id="customer-name" placeholder="Your full name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="customer-phone">Phone Number</label>
+                                <input type="tel" id="customer-phone" placeholder="Your contact number" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="customer-address">Address</label>
+                                <input type="text" id="customer-address" placeholder="Service location address" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="service-description">Special Requirements</label>
+                                <textarea id="service-description" placeholder="Please mention any specific requirements, allergies, or preferences"></textarea>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <button type="submit" class="btn btn-lg" style="width: 100%;">Book Service Now</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Join Our Growing Community</h2>
+                <p class="cta-p">Whether you're looking for quality services or want to offer your professional skills, Suvidhaa is the platform that brings people together.</p>
+                <a href="#" class="btn btn-lg" onclick="openProviderModal()">Find Services</a>
+                <a href="#" class="btn btn-outline btn-lg">Become a Provider</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="logo" onclick="scrollToTop()">Suvidh<span>aa</span></div>
+                    <p>Connecting quality service providers with customers seeking reliable home services.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">f</a>
+                        <a href="#" class="https://www.instagram.com/suvidhaa.shop/">X</a>
+                        <a href="#" class="social-link">in</a>
+                        <a href="#" class="social-link">ig</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">How It Works</a></li>
+                        <li><a href="#">Become a Provider</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Popular Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Plumbing</a></li>
+                        <li><a href="#">Electrician</a></li>
+                        <li><a href="#">Home Cleaning</a></li>
+                        <li><a href="#">Painting</a></li>
+                        <li><a href="#">Beauty & Spa</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">Support Center</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Newsletter</h3>
+                    <div class="newsletter">
+                        <p>Subscribe to get updates on new services and exclusive offers.</p>
+                        <form class="newsletter-form">
+                            <input type="email" class="newsletter-input" placeholder="Your Email Address">
+                            <button type="submit" class="newsletter-btn">→</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Suvidhaa. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="back-to-top" onclick="scrollToTop()">↑</div>
+
+    <script>
+        // JavaScript to handle FAQ toggles
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentNode;
+                faqItem.classList.toggle('active');
+            });
+        });
+
+        // Function to scroll to top
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Function to toggle mobile menu
+        function toggleMenu() {
+            document.querySelector('.nav-links').classList.toggle('nav-active');
+            document.querySelector('.hamburger').classList.toggle('toggle');
+        }
+
+        // Functions to handle section scrolling
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+            // Close mobile menu if open
+            document.querySelector('.nav-links').classList.remove('nav-active');
+            document.querySelector('.hamburger').classList.remove('toggle');
+        }
+
+        // Functions for service navigation
+        function viewServiceDetails(serviceType) {
+            // Navigate to service detail page
+            console.log(`Viewing ${serviceType} service details`);
+            // Add actual navigation logic here
+        }
+
+        function bookService(serviceType) {
+            // Navigate to booking page for specific service
+            console.log(`Booking ${serviceType} service`);
+            // Add actual booking logic here
+        }
+
+        // Functions for modal dialogs
+        function openLoginModal() {
+            // Open login modal
+            console.log('Opening login modal');
+            // Add actual modal opening logic here
+        }
+
+        function openProviderModal() {
+            // Open provider registration modal
+            console.log('Opening provider registration modal');
+            // Add actual modal opening logic here
+        }
+
+        // Form submission handling
+        document.getElementById('service-booking-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Handle form submission
+            console.log('Booking form submitted');
+            // Add actual form submission logic here
+            alert('Thank you for booking our service! We will contact you shortly to confirm your appointment.');
+        });
+        
+        // Back to top button visibility
+        window.addEventListener('scroll', function() {
+            const backToTopButton = document.querySelector('.back-to-top');
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('visible');
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        });
+    </script>
+</body>
+</html>

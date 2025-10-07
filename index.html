@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suvidhaa - Connect with Local Service Providers</title>
+    <!-- Google Fonts Integration -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+   
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo" onclick="scrollToTop()">Suvidh<span>aa</span></div>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#" onclick="scrollToSection('home')">Home</a></li>
+                    <li><a href="Painting.html" onclick="scrollToSection('services')">Services</a></li>
+                    <!-- <li><a href="How it works.html" onclick="scrollToSection('how-works')">How It Works</a></li>
+                    <li><a href="about us.html" onclick="scrollToSection('features')">About us</a></li> -->
+                    <li><a href="contact us.html" onclick="scrollToSection('testimonials')">Contact us</a></li>
+                    <li><a href="provider.html" onclick="openProviderModal()" class="btn btn-outline1">Become a Provider</a></li>
+                    <li><a href="sign in login.html" onclick="openLoginModal()" class="btn btn-outline1">Login / Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Local Services, Delivered with Care</h1>
+                <p>Connect with trusted service providers in your neighborhood for all your home and personal needs.</p>
+                <a href="Plumbing.html" class="btn btn-lg" onclick="scrollToSection('services')">Find Services</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="search-container">
+            <div class="search-box">
+                <div class="search-input">
+                    <select id="service-select">
+                        <option value="">Select Service</option>
+                        <option value="plumbing">Plumbing</option>
+                        <option value="electrical">Electrician</option>
+                        <option value="cleaning">Cleaning</option>
+                        <option value="painting">Painting</option>
+                        <option value="carpentry">Carpentry</option>
+                        <option value="beauty">Beauty & Spa</option>
+                        <option value="tutoring">Tutoring</option>
+                        <option value="appliance">Appliance Repair</option>
+                        <option value="gardening">Gardening</option>
+                    </select>
+                </div>
+                <div class="search-input">
+                    <input type="text" id="location-input" placeholder="Enter your location">
+                </div>
+                <div class="search-input">
+                    <button class="btn" onclick="searchServices()">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="section" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Popular Services</h2>
+                <p>Discover the most requested services in your area</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" onclick="viewServiceDetails('plumbing')">
+                    <div class="service-img">
+                        <!-- <img src="/api/placeholder/300/200" alt="Plumbing Services"> -->
+
+                        <a href="https://ibb.co/N20fPMRG"><img src="https://i.ibb.co/N20fPMRG/39137cd2-a5ea-4753-8108-cf88e276c052.png" alt="39137cd2-a5ea-4753-8108-cf88e276c052" border="0"></a>
+                    </div>
+                    <div class="service-content">
+                        <div class="service-rating">★★★★★</div>
+                        <h3>Plumbing</h3>
+                        <p>Expert plumbers for repairs, installations, and maintenance.</p>
+                        <div class="service-price">Starting from ₹499</div>
+                        <a href="booking.html" class="btn btn-outline" onclick="event.stopPropagation(); bookService('plumbing')">Book Now</a>
+                    </div>
+                </div>
+
+                <div class="service-card" onclick="viewServiceDetails('electrical')">
+                    <div class="service-img">
+                        <!-- <img src="/api/placeholder/300/200" alt="Electrical Services"> -->
+                        <a href="https://ibb.co/KphG6qCd"><img src="https://i.ibb.co/KphG6qCd/expanded-background-image.png" alt="expanded-background-image" border="0"></a>
+                    </div>
+                    <div class="service-content">
+                        <div class="service-rating">★★★★☆</div>
+                        <h3>Electrician</h3>
+                        <p>Certified electricians for all your electrical needs.</p>
+                        <div class="service-price">Starting from ₹399</div>
+                        <a href="booking.html" class="btn btn-outline" onclick="event.stopPropagation(); bookService('electrical')">Book Now</a>
+                    </div>
+                </div>
+
+                <div class="service-card" onclick="viewServiceDetails('cleaning')">
+                    <div class="service-img">
+                        <a href="https://ibb.co/6Q3zdLv"><img src="https://i.ibb.co/6Q3zdLv/expanded-image.png" alt="expanded-image" border="0"></a>
+                        <!-- <img src="/api/placeholder/300/200" alt="Cleaning Services"> -->
+                    </div>
+                    <div class="service-content">
+                        <div class="service-rating">★★★★★</div>
+                        <h3>Home Cleaning</h3>
+                        <p>Professional cleaning services for a spotless home.</p>
+                        <div class="service-price">Starting from ₹699</div>
+                        <a href="booking.html" class="btn btn-outline" onclick="event.stopPropagation(); bookService('cleaning')">Book Now</a>
+                    </div>
+                </div>
+
+                <div class="service-card" onclick="viewServiceDetails('painting')">
+                    <div class="service-img">
+                        <!-- <img src="/api/placeholder/300/200" alt="Painting Services"> -->
+                        <a href="https://ibb.co/yBnbC8db"><img src="https://i.ibb.co/yBnbC8db/f48811e8b695469a870bd0370f2af9d6fd64255e56badba938b457e7a981ec2d.jpg" alt="f48811e8b695469a870bd0370f2af9d6fd64255e56badba938b457e7a981ec2d" border="0"></a>
+                    </div>
+                    <div class="service-content">
+                        <div class="service-rating">★★★★☆</div>
+                        <h3>Painting</h3>
+                        <p>Transform your space with our expert painters.</p>
+                        <div class="service-price">Starting from ₹1299</div>
+                        <a href="booking.html"btn btn-outline" onclick="event.stopPropagation(); bookService('painting')">Book Now</a>
+                    </div>
+                </div>
+
+                <div class="service-card" onclick="viewServiceDetails('carpentry')">
+                    <div class="service-img">
+                        <!-- <img src="/api/placeholder/300/200" alt="Carpentry Services"> -->
+                        <a href="https://ibb.co/FbKbJ5bJ"><img src="https://i.ibb.co/FbKbJ5bJ/438a0ac6-037e-4b5e-9a1e-d58e34bf933a.jpg" alt="438a0ac6-037e-4b5e-9a1e-d58e34bf933a" border="0"></a>
+                    </div>
+                    <div class="service-content">
+                        <div class="service-rating">★★★★☆</div>
+                        <h3>Carpentry</h3>
+                        <p>Custom furniture and woodwork by skilled carpenters.</p>
+                        <div class="service-price">Starting from ₹799</div>
+                        <a href="booking.html" class="btn btn-outline" onclick="event.stopPropagation(); bookService('carpentry')">Book Now</a>
+                    </div>
+                </div>
+
+                <div class="service-card" onclick="viewServiceDetails('beauty')">
+                    <div class="service-img">
+                        <!-- <img src="/api/placeholder/300/200" alt="Beauty Services"> -->
+                        <a href="https://ibb.co/21hTrfMT"><img src="https://i.ibb.co/21hTrfMT/9d81a77187b7e285ffbf2b45c6c159d596ee195c7f6a45901c8414b45818a5ff.jpg" alt="9d81a77187b7e285ffbf2b45c6c159d596ee195c7f6a45901c8414b45818a5ff" border="0"></a>
+                    </div>
+                    <div class="service-content">
+                        <div class="service-rating">★★★★★</div>
+                        <h3>Beauty & Spa</h3>
+                        <p>Professional beauty treatments in the comfort of your home.</p>
+                        <div class="service-price">Starting from ₹599</div>
+                        <a href="booking.html" class="btn btn-outline" onclick="event.stopPropagation(); bookService('beauty')">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="section-footer" style="text-align: center; margin-top: 40px;">
+                <a href="How it works.html" class="btn btn-lg">View All Services</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section how-works" id="how-works">
+        <div class="container">
+            <div class="section-header">
+                <h2>How It Works</h2>
+                <p>Get your services in just a few simple steps</p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-icon">1</div>
+                    <h3>Choose a Service</h3>
+                    <p>Browse through our catalog of services and select what you need.</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">2</div>
+                    <h3>Book an Appointment</h3>
+                    <p>Select a convenient date and time for your service appointment.</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">3</div>
+                    <h3>Get Service Delivered</h3>
+                    <p>Our verified professional will arrive at your doorstep to provide the service.</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">4</div>
+                    <h3>Pay & Review</h3>
+                    <p>Make secure payment and share your valuable feedback.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Customers Say</h2>
+                <p>Don't just take our word for it, see what others are saying</p>
+            </div>
+            <div class="testimonials-container">
+                <div class="testimonials-slider">
+                    <div class="testimonial active">
+                        <div class="testimonial-avatar">
+                            <a href="https://ibb.co/Z1YMJFNb"><img src="https://i.ibb.co/Z1YMJFNb/Download-Indian-woman-s-face-avatar-for-free.jpg" alt="Download-Indian-woman-s-face-avatar-for-free" border="0"></a>
+                        </div>
+                        <p>I was very impressed with the plumbing service. The technician was prompt, professional, and fixed my leaking faucet in no time. Will definitely use Suvidhaa again!</p>
+                        <div class="testimonial-name">Priya Sharma</div>
+                        <div class="testimonial-role">Delhi</div>
+                    </div>
+                </div>
+                <div class="slider-nav">
+                    <div class="slider-dot active"></div>
+                    <div class="slider-dot"></div>
+                    <div class="slider-dot"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose Suvidhaa</h2>
+                <p>We're committed to providing the best service experience</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Verified Professionals</h3>
+                    <p>All our service partners undergo thorough background checks and skill verification.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⏰</div>
+                    <h3>On-Time Service</h3>
+                    <p>We value your time and ensure our professionals arrive on schedule.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>Transparent Pricing</h3>
+                    <p>No hidden charges. Pay only what you see upfront.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">✅</div>
+                    <h3>Quality Assurance</h3>
+                    <p>Our services come with a satisfaction guarantee.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Secure Payments</h3>
+                    <p>Multiple secure payment options for your convenience.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎧</div>
+                    <h3>24/7 Support</h3>
+                    <p>Our customer service team is always available to assist you.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="app-download" id="app-download">
+        <div class="container">
+            <div class="app-content">
+                <div class="app-text">
+                    <h2>Download Our Mobile App</h2>
+                    <p>Book services on the go, track your service provider in real-time, and get exclusive app-only offers.</p>
+                    <div class="app-buttons">
+                        <a href="#" class="app-button">
+                            <div class="app-button-icon">
+                                <span>🍎</span>
+                            </div>
+                            <div class="app-button-text">
+                                <small>Download on the</small>
+                                <strong>App Store</strong>
+                            </div>
+                        </a>
+                        <a href="#" class="app-button">
+                            <div class="app-button-icon">
+                                <span>🤖</span>
+                            </div>
+                            <div class="app-button-text">
+                                <small>Get it on</small>
+                                <strong>Google Play</strong>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="app-image">
+                    <!-- <img src="https://ibb.co/WZ3CjN2" alt="Suvidhaa Mobile App"> -->
+                    <a href="https://ibb.co/WZ3CjN2"><img src="https://i.ibb.co/WZ3CjN2/d1acf9a4-2eef-4081-80b2-54f667b33ddd.jpg" alt="d1acf9a4-2eef-4081-80b2-54f667b33ddd" border="0"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Join Our Growing Community</h2>
+                <p>Whether you're looking for quality services or want to offer your professional skills, Suvidhaa is the platform that brings people together.</p>
+                <a href="Beauty & Spa.html" class="btn btn-lg" onclick="openProviderModal()">Find Services</a>
+                <a href="provider.html" class="btn btn-outline btn-lg">Become a Provider</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="logo" onclick="scrollToTop()">Suvidh<span>aa</span></div>
+                    <p>Connecting quality service providers with customers seeking reliable home services.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">f</a>
+                        <a href="#" class="social-link">X</a>
+                        <a href="https://www.instagram.com/suvidhaa.shop/" class="social-link">in</a>
+                        <a href="#" class="social-link">ig</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="about us.html">About Us</a></li>
+                        <li><a href="about us.html">Services</a></li>
+                        <li><a href="How it works.html">How It Works</a></li>
+                        <li><a href="provider.html">Become a Provider</a></li>
+                        <!-- <li><a href="#">Blog</a></li> -->
+                        <li><a href="contact us.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Popular Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="Plumbing.html">Plumbing</a></li>
+                        <li><a href="Electrician.html">Electrician</a></li>
+                        <li><a href="House cleaning.html">Home Cleaning</a></li>
+                        <li><a href="Painting.html">Painting</a></li>
+                        <!-- <li><a href="#">Carpentry</a></li> -->
+                        <li><a href="Beauty & Spa.html">Beauty & Spa</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">Support Center</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Newsletter</h3>
+                    <div class="newsletter">
+                        <p>Subscribe to get updates on new services and exclusive offers.</p>
+                        <form class="newsletter-form">
+                            <input type="email" class="newsletter-input" placeholder="Your Email Address">
+                            <button type="submit" class="newsletter-btn">→</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Suvidhaa. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Provider Modal -->
+    <!-- <div id="providerModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeProviderModal()">&times;</span>
+            <div class="modal-header">
+                <h2>Become a Service Provider</h2>
+                <p>Fill out the form below to join our network of trusted professionals.</p>
+            </div>
+            <form id="provider-form">
+                <div class="modal-form-group">
+                    <label for="provider-name">Full Name</label>
+                    <input type="text" id="provider-name" required>
+                </div>
+                <div class="modal-form-group">
+                    <label for="provider-phone">Phone Number</label>
+                    <input type="tel" id="provider-phone" required>
+                </div>
+                <div class="modal-form-group">
+                    <label for="provider-email">Email Address</label>
+                    <input type="email" id="provider-email" required>
+                </div>
+                <div class="modal-form-group">
+                    <label for="provider-service">Service Category</label>
+                    <select id="provider-service" required>
+                        <option value="">Select Service</option>
+                        <option value="plumbing">Plumbing</option>
+                        <option value="electrical">Electrician</option>
+                        <option value="cleaning">Cleaning</option>
+                        <option value="painting">Painting</option>
+                        <option value="carpentry">Carpentry</option>
+                        <option value="beauty">Beauty & Spa</option>
+                        <option value="tutoring">Tutoring</option>
+                        <option value="appliance">Appliance Repair</option>
+                        <option value="gardening">Gardening</option>
+                    </select>
+                </div>
+                <div class="modal-form-group">
+                    <label for="provider-location">Service Location</label>
+                    <input type="text" id="provider-location" required>
+                </div>
+                <div class="modal-form-group">
+                    <label for="provider-experience">Years of Experience</label>
+                    <input type="number" id="provider-experience" min="0" required>
+                </div>
+                <div class="modal-form-group">
+                    <button type="submit" class="btn btn-lg" style="width: 100%;">Submit Application</button>
+                </div>
+            </form>
+        </div>
+    </div> -->
+
+    <!-- Login Modal -->
+    <!-- <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeLoginModal()">&times;</span>
+            <div class="modal-header">
+                <h2>Login / Sign Up</h2>
+                <p>Access your account or create a new one</p>
+            </div>
+            <form id="login-form">
+                <div class="modal-form-group">
+                    <label for="user-phone">Phone Number</label>
+                    <input type="tel" id="user-phone" required>
+                </div>
+                <div class="modal-form-group">
+                    <button type="submit" class="btn btn-lg" style="width: 100%;">Continue</button>
+                </div>
+            </form>
+        </div>
+    </div> -->
+
+    <div class="back-to-top" onclick="scrollToTop()">↑</div>
+    
+
+    <script>
+        // Mobile menu toggle
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            const hamburger = document.querySelector('.hamburger');
+            navLinks.classList.toggle('nav-active');
+            hamburger.classList.toggle('toggle');
+        }
+
+        // Scroll to section
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Scroll to top
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Modal functions
+        function openProviderModal() {
+            document.getElementById('providerModal').style.display = 'block';
+        }
+
+        function closeProviderModal() {
+            document.getElementById('providerModal').style.display = 'none';
+        }
+
+        function openLoginModal() {
+            document.getElementById('loginModal').style.display = 'block';
+        }
+
+        function closeLoginModal() {
+            document.getElementById('loginModal').style.display = 'none';
+        }
+
+        // Search services
+        function searchServices() {
+            const service = document.getElementById('service-select').value;
+            const location = document.getElementById('location-input').value;
+            
+            if (service && location) {
+                alert(`Searching for ${service} services in ${location}`);
+                // In a real app, this would redirect to search results
+            } else {
+                alert('Please select a service and enter your location');
+            }
+        }
+
+        // View service details
+        function viewServiceDetails(service) {
+            alert(`View details for ${service} service`);
+            // In a real app, this would open the service details page
+        }
+
+        // Book service
+        function bookService(service) {
+            openLoginModal();
+            // In a real app, this would check if user is logged in,
+            // and then redirect to booking page or open login modal
+        }
+
+        // Back to top button visibility
+        window.addEventListener('scroll', function() {
+            const backToTopButton = document.querySelector('.back-to-top');
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('visible');
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        });
+
+        // Close modals when clicking outside
+        window.addEventListener('click', function(event) {
+            const providerModal = document.getElementById('providerModal');
+            const loginModal = document.getElementById('loginModal');
+            
+            if (event.target === providerModal) {
+                closeProviderModal();
+            }
+            
+            if (event.target === loginModal) {
+                closeLoginModal();
+            }
+        });
+    </script>
+</body>
+</html>

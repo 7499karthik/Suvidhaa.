@@ -1,0 +1,641 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suvidhaa - Connect with Local costumers</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="provider.css">
+    <header>
+    <div class="container">
+        <nav class="navbar">
+            <div class="logo">Suvidh<span>aa</span></div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">How It Works</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                 <li><a href="#" class="btn btn-outline">Become a Provider</a></li>
+                <li><a href="#" class="btn btn-outline">Login / Sign Up</a></li>
+            </ul>
+        </nav>
+    </div>
+</header> -->
+   <!-- Provider Hero Section -->
+    <!-- <section class="provider-hero">
+      <div class="container">
+        <div class="provider-hero-content">
+          <h1>Join Our Network of Trusted Providers</h1>
+          <p>
+            Grow your business, gain new customers, and be part of a community that values quality service.
+          </p>
+          <a href="#provider-form" class="btn btn-lg">Apply Now</a>
+        </div>
+      </div>
+    </section> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suvidhaa - Connect with Local Service Providers</title>
+    <!-- Google Fonts Integration -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="provider.css">
+   
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo" onclick="scrollToTop()">Suvidh<span>aa</span></div>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <ul class="nav-links">
+                  <li><a href="#" onclick="scrollToSection('home')">Home</a></li>
+                  <li><a href="Painting.html" onclick="scrollToSection('services')">Services</a></li>
+                  <li><a href="How it works.html" onclick="scrollToSection('how-works')">How It Works</a></li>
+                  <!-- <li><a href="about us.html" onclick="scrollToSection('features')">About us</a></li>
+                  <li><a href="contact us.html" onclick="scrollToSection('testimonials')">Contact us</a></li> -->
+                  <li><a href="provider.html" onclick="openProviderModal()" class="btn btn-outline1">Become a Provider</a></li>
+                  <li><a href="sign in login.html" onclick="openLoginModal()" class="btn btn-outline1">Login / Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Join Our Network of Trusted Providers</h1>
+                <p> Grow your business, gain new customers, and be part of a community that values quality service.</p>
+                <a href="#" class="btn btn-lg" onclick="scrollToSection('services')">Find Services</a>
+            </div>
+        </div>
+    </section>
+
+ 
+
+    <!-- Provider Form Section -->
+    <section class="section" id="provider-form">
+      <div class="container">
+        <div class="section-header">
+          <h2>Become a Suvidhaa Service Provider</h2>
+          <p>Fill out the form below to start your application process</p>
+        </div>
+        <div class="provider-form-container">
+          <form id="providerForm">
+            <div class="form-row">
+              <div class="form-col">
+                <div class="form-group">
+                  <label for="firstName">First Name</label>
+                  <input
+                    type="text"
+                    id="firstName"
+                    class="form-control"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-col">
+                <div class="form-group">
+                  <label for="lastName">Last Name</label>
+                  <input
+                    type="text"
+                    id="lastName"
+                    class="form-control"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" class="form-control" required />
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" class="form-control" required />
+            </div>
+
+            <div class="form-row">
+              <div class="form-col">
+                <div class="form-group">
+                  <label for="city">City</label>
+                  <input type="text" id="city" class="form-control" required />
+                </div>
+              </div>
+              <div class="form-col">
+                <div class="form-group">
+                  <label for="pincode">Pincode</label>
+                  <input
+                    type="text"
+                    id="pincode"
+                    class="form-control"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="serviceCategory">Service Category</label>
+              <select id="serviceCategory" class="form-control" required>
+                <option value="" disabled selected>
+                  Select your service category
+                </option>
+                <option value="plumbing">Plumbing</option>
+                <option value="electrical">Electrical</option>
+                <option value="cleaning">Home Cleaning</option>
+                <option value="beauty">Beauty & Spa</option>
+                <option value="carpentry">Carpentry</option>
+                <option value="tutoring">Tutoring</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Services Offered</label>
+              <div class="checkboxes">
+                <div class="checkbox-item">
+                  <input
+                    type="checkbox"
+                    id="service1"
+                    name="services"
+                    value="installation"
+                  />
+                  <label for="service1">Installation</label>
+                </div>
+                <div class="checkbox-item">
+                  <input
+                    type="checkbox"
+                    id="service2"
+                    name="services"
+                    value="repair"
+                  />
+                  <label for="service2">Repair</label>
+                </div>
+                <div class="checkbox-item">
+                  <input
+                    type="checkbox"
+                    id="service3"
+                    name="services"
+                    value="maintenance"
+                  />
+                  <label for="service3">Maintenance</label>
+                </div>
+                <div class="checkbox-item">
+                  <input
+                    type="checkbox"
+                    id="service4"
+                    name="services"
+                    value="consultation"
+                  />
+                  <label for="service4">Consultation</label>
+                </div>
+                <div class="checkbox-item">
+                  <input
+                    type="checkbox"
+                    id="service5"
+                    name="services"
+                    value="emergency"
+                  />
+                  <label for="service5">Emergency</label>
+                </div>
+                <div class="checkbox-item">
+                  <input
+                    type="checkbox"
+                    id="service6"
+                    name="services"
+                    value="other"
+                  />
+                  <label for="service6">Other</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="experience">Years of Experience</label>
+              <select id="experience" class="form-control" required>
+                <option value="" disabled selected>
+                  Select your experience
+                </option>
+                <option value="0-1">Less than 1 year</option>
+                <option value="1-3">1-3 years</option>
+                <option value="3-5">3-5 years</option>
+                <option value="5-10">5-10 years</option>
+                <option value="10+">10+ years</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="about">About Yourself & Your Services</label>
+              <textarea
+                id="about"
+                class="form-control"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="document">Upload ID Proof (Aadhar/PAN/Driving License)</label>
+              <input type="file" id="document" class="form-control" />
+            </div>
+
+            <div class="form-footer">
+              <button type="submit" class="btn btn-lg">Submit Application</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="section benefits">
+      <div class="container">
+        <div class="section-header">
+          <h2>Why Join Suvidhaa</h2>
+          <p>Discover the advantages of becoming a service provider with us</p>
+        </div>
+        <div class="benefits-grid">
+          <div class="benefit-card">
+            <div class="benefit-icon">1</div>
+            <h3>Increased Visibility</h3>
+            <p>
+              Reach thousands of potential customers in your area looking for
+              your services
+            </p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-icon">2</div>
+            <h3>Flexible Schedule</h3>
+            <p>
+              Choose your working hours and manage your appointments easily
+            </p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-icon">3</div>
+            <h3>Steady Income</h3>
+            <p>
+              Regular bookings and secure payments through our trusted platform
+            </p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-icon">4</div>
+            <h3>No Marketing Costs</h3>
+            <p>
+              We handle marketing and customer acquisition so you can focus on
+              your work
+            </p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-icon">5</div>
+            <h3>Support & Training</h3>
+            <p>
+              Access to resources, training materials, and customer service
+              support
+            </p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-icon">6</div>
+            <h3>Build Your Reputation</h3>
+            <p>
+              Collect reviews and ratings to showcase your quality service
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Frequently Asked Questions</h2>
+          <p>Everything you need to know about becoming a service provider</p>
+        </div>
+        <div class="faq-container">
+          <div class="faq-item">
+            <div class="faq-question">
+              How long does the application process take?
+              <span>+</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                The typical application process takes 2-3 business days. Once you
+                submit your application, our team will review your credentials
+                and experience. If approved, you'll receive an email with next
+                steps to complete your profile.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              What documents do I need to register?
+              <span>+</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                You'll need to provide a valid government ID (Aadhar Card, PAN
+                Card, or Driving License), proof of address, and any relevant
+                professional certifications for your service category.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              How do I receive payments?
+              <span>+</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Payments are processed securely through our platform. After a
+                service is completed and confirmed by the customer, the payment
+                will be transferred to your registered bank account within 2-3
+                business days.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              What fees does Suvidhaa charge?
+              <span>+</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Suvidhaa charges a modest service fee of 10-15% per transaction,
+                depending on your service category. This fee covers platform
+                maintenance, marketing efforts, and customer support services.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              Can I set my own prices?
+              <span>+</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Yes, you have full control over your service pricing. We provide
+                guidelines based on market rates, but you can set your prices
+                according to your experience, expertise, and the complexity of
+                services you offer.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Join Our Growing Community</h2>
+                <p>Whether you're looking for quality services or want to offer your professional skills, Suvidhaa is the platform that brings people together.</p>
+                <a href="#" class="btn btn-lg">Find Services</a>
+                <a href="#" class="btn btn-outline btn-lg">Become a Provider</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer 
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                  <div class="logo">Suvidh<span>aa</span></div>
+                    <p>Connecting communities through quality service.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">f</a>
+                        <a href="#" class="social-link">t</a>
+                        <a href="#" class="social-link">in</a>
+                        <a href="#" class="social-link">i</a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Home Services</a></li>
+                        <li><a href="#">Professional Services</a></li>
+                        <li><a href="#">Health & Wellness</a></li>
+                        <li><a href="#">Education & Tutoring</a></li>
+                        <li><a href="#">Events & Occasions</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">How It Works</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Safety</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Suvidhaa. All rights reserved.</p>
+            </div>
+        </div>
+    </footer> -->
+    <section class="cta">
+      <div class="container">
+          <div class="cta-content">
+              <h2>Join Our Growing Community</h2>
+              <p>Whether you're looking for quality services or want to offer your professional skills, Suvidhaa is the platform that brings people together.</p>
+              <a href="#" class="btn btn-lg" onclick="openProviderModal()">Find Services</a>
+              <a href="#" class="btn btn-outline btn-lg">Become a Provider</a>
+          </div>
+      </div>
+  </section>
+
+  <footer>
+      <div class="container">
+          <div class="footer-content">
+              <div class="footer-column">
+                  <div class="logo" onclick="scrollToTop()">Suvidh<span>aa</span></div>
+                  <p>Connecting quality service providers with customers seeking reliable home services.</p>
+                  <div class="social-links">
+                      <a href="#" class="social-link">f</a>
+                      <a href="#" class="social-link">X</a>
+                      <a href="https://www.instagram.com/suvidhaa.shop/" class="social-link">in</a>
+                      <a href="#" class="social-link">ig</a>
+                  </div>
+              </div>
+              <div class="footer-column">
+                  <h3>Quick Links</h3>
+                  <ul class="footer-links">
+                      <li><a href="#">About Us</a></li>
+                      <li><a href="#">Services</a></li>
+                      <li><a href="#">How It Works</a></li>
+                      <li><a href="#">Become a Provider</a></li>
+                      <!-- <li><a href="#">Blog</a></li> -->
+                      <li><a href="#">Contact Us</a></li>
+                  </ul>
+              </div>
+              <div class="footer-column">
+                  <h3>Popular Services</h3>
+                  <ul class="footer-links">
+                      <li><a href="#">Plumbing</a></li>
+                      <li><a href="#">Electrician</a></li>
+                      <li><a href="#">Home Cleaning</a></li>
+                      <li><a href="#">Painting</a></li>
+                      <!-- <li><a href="#">Carpentry</a></li> -->
+                      <li><a href="#">Beauty & Spa</a></li>
+                  </ul>
+              </div>
+              <div class="footer-column">
+                  <h3>Support</h3>
+                  <ul class="footer-links">
+                      <li><a href="#">FAQs</a></li>
+                      <li><a href="#">Privacy Policy</a></li>
+                      <li><a href="#">Terms & Conditions</a></li>
+                      <li><a href="#">Refund Policy</a></li>
+                      <li><a href="#">Support Center</a></li>
+                  </ul>
+              </div>
+              <div class="footer-column">
+                  <h3>Newsletter</h3>
+                  <div class="newsletter">
+                      <p>Subscribe to get updates on new services and exclusive offers.</p>
+                      <form class="newsletter-form">
+                          <input type="email" class="newsletter-input" placeholder="Your Email Address">
+                          <button type="submit" class="newsletter-btn">→</button>
+                      </form>
+                  </div>
+              </div>
+          </div>
+          <div class="footer-bottom">
+              <p>&copy; 2025 Suvidhaa. All rights reserved.</p>
+          </div>
+      </div>
+  </footer>
+
+  <div class="back-to-top" onclick="scrollToTop()">↑</div>
+  
+
+  <script>
+      // Mobile menu toggle
+      function toggleMenu() {
+          const navLinks = document.querySelector('.nav-links');
+          const hamburger = document.querySelector('.hamburger');
+          navLinks.classList.toggle('nav-active');
+          hamburger.classList.toggle('toggle');
+      }
+
+      // Scroll to section
+      function scrollToSection(sectionId) {
+          const section = document.getElementById(sectionId);
+          section.scrollIntoView({ behavior: 'smooth' });
+      }
+
+      // Scroll to top
+      function scrollToTop() {
+          window.scrollTo({
+              top: 0,
+              behavior: 'smooth'
+          });
+      }
+
+      // Modal functions
+      function openProviderModal() {
+          document.getElementById('providerModal').style.display = 'block';
+      }
+
+      function closeProviderModal() {
+          document.getElementById('providerModal').style.display = 'none';
+      }
+
+      function openLoginModal() {
+          document.getElementById('loginModal').style.display = 'block';
+      }
+
+      function closeLoginModal() {
+          document.getElementById('loginModal').style.display = 'none';
+      }
+
+      // Search services
+      function searchServices() {
+          const service = document.getElementById('service-select').value;
+          const location = document.getElementById('location-input').value;
+          
+          if (service && location) {
+              alert(`Searching for ${service} services in ${location}`);
+              // In a real app, this would redirect to search results
+          } else {
+              alert('Please select a service and enter your location');
+          }
+      }
+
+      // View service details
+      function viewServiceDetails(service) {
+          alert(`View details for ${service} service`);
+          // In a real app, this would open the service details page
+      }
+
+      // Book service
+      function bookService(service) {
+          openLoginModal();
+          // In a real app, this would check if user is logged in,
+          // and then redirect to booking page or open login modal
+      }
+
+      // Back to top button visibility
+      window.addEventListener('scroll', function() {
+          const backToTopButton = document.querySelector('.back-to-top');
+          if (window.pageYOffset > 300) {
+              backToTopButton.classList.add('visible');
+          } else {
+              backToTopButton.classList.remove('visible');
+          }
+      });
+
+      // Close modals when clicking outside
+      window.addEventListener('click', function(event) {
+          const providerModal = document.getElementById('providerModal');
+          const loginModal = document.getElementById('loginModal');
+          
+          if (event.target === providerModal) {
+              closeProviderModal();
+          }
+          
+          if (event.target === loginModal) {
+              closeLoginModal();
+          }
+      });
+  </script>
+</body>
+</html>    

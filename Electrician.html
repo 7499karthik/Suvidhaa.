@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electrician Services - Suvidhaa</title>
+    <!-- Google Fonts Integration -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo" onclick="scrollToTop()">Suvidh<span>aa</span></div>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html" onclick="scrollToSection('home')">Home</a></li>
+                    <li><a href="Painting.html" onclick="scrollToSection('services')">Services</a></li>
+                    <li><a href="How it works.html" onclick="scrollToSection('how-works')">How It Works</a></li>
+                    <!-- <li><a href="about us.html" onclick="scrollToSection('features')">About us</a></li>
+                    <li><a href="contact us.html" onclick="scrollToSection('testimonials')">Contact us</a></li> -->
+                    <li><a href="provider.html" onclick="openProviderModal()" class="btn btn-outline1">Become a Provider</a></li>
+                    <li><a href="sign in login.html" onclick="openLoginModal()" class="btn btn-outline1">Login / Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="service-hero">
+        <div class="container">
+            <div class="service-hero-content">
+                <h1>Professional Electrician Services</h1>
+                <p>Get expert electrical solutions for your home or business. Our certified electricians handle everything from minor repairs to major installations.</p>
+                <a href="#book-now" class="btn btn-lg">Book Service Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="service-overview">
+                <div class="service-details">
+                    <h2>Service Overview</h2>
+                    <p>Our electrical service covers a wide range of issues, ensuring that your electrical systems function safely and efficiently. Whether you're dealing with power outages, need new wiring, or want to install lighting fixtures, our certified electricians are here to help.</p>
+                    
+                    <h3>Our Electrical Services Include:</h3>
+                    <ul>
+                        <li>Electrical Repair & Troubleshooting</li>
+                        <li>New Wiring & Rewiring</li>
+                        <li>Circuit Breaker Installation & Repair</li>
+                        <li>Lighting Installation & Repair</li>
+                        <li>Fan Installation & Repair</li>
+                        <li>Switch & Socket Installation</li>
+                        <li>Electrical Safety Inspections</li>
+                        <li>Emergency Electrical Services</li>
+                    </ul>
+                    
+                    <div class="service-highlights">
+                        <div class="highlight">
+                            <h4>✓ 24/7 Emergency Service</h4>
+                            <p>Our electricians are available round the clock for urgent electrical issues.</p>
+                        </div>
+                        <div class="highlight">
+                            <h4>✓ 30-Day Service Guarantee</h4>
+                            <p>If the same issue recurs within 30 days, we'll fix it for free.</p>
+                        </div>
+                        <div class="highlight">
+                            <h4>✓ Licensed & Insured Professionals</h4>
+                            <p>All our electricians are certified with years of experience.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-image1">
+                    <img src="https://i.ibb.co/KphG6qCd/expanded-background-image.png" alt="Electrician Service">
+                </div>
+            </div>
+            
+            <div class="service-pricing">
+                <h2>Transparent Pricing</h2>
+                <p>Our electrical services come with clear, upfront pricing. No hidden charges or surprises.</p>
+                
+                <div class="pricing-tables">
+                    <div class="pricing-option">
+                        <h3>Basic Service</h3>
+                        <div class="price">₹399</div>
+                        <div class="price-details">Starting price for basic services</div>
+                        <ul>
+                            <li>Electrical Inspection</li>
+                            <li>Switch/Socket Repair</li>
+                            <li>Fan Repair</li>
+                            <li>Simple Fixture Installation</li>
+                        </ul>
+                        <a href="booking.html" class="btn">Book Now</a>
+                    </div>
+                    
+                    <div class="pricing-option">
+                        <h3>Standard Service</h3>
+                        <div class="price">₹799</div>
+                        <div class="price-details">Most common electrical needs</div>
+                        <ul>
+                            <li>Complete Circuit Inspection</li>
+                            <li>Short Circuit Fixing</li>
+                            <li>Fixture Replacement</li>
+                            <li>MCB Installation/Repair</li>
+                            <li>Minor Wiring Work</li>
+                        </ul>
+                        <a href="booking.html" class="btn">Book Now</a>
+                    </div>
+                    
+                    <div class="pricing-option">
+                        <h3>Premium Service</h3>
+                        <div class="price">₹1599</div>
+                        <div class="price-details">Comprehensive electrical solutions</div>
+                        <ul>
+                            <li>Full Home Rewiring</li>
+                            <li>Distribution Board Installation</li>
+                            <li>Complete Lighting Setup</li>
+                            <li>Surge Protection Installation</li>
+                            <li>1-Year Service Warranty</li>
+                        </ul>
+                        <a href="booking.html" class="btn">Book Now</a>
+                    </div>
+                </div>
+                
+                <p style="margin-top: 20px; font-size: 0.9rem;">* Final pricing may vary based on the complexity of the job and materials required. Our technician will provide an exact quote after inspection.</p>
+            </div>
+            
+            <div class="provider-profiles">
+                <h2>Meet Our Top Electricians</h2>
+                <p>Our service providers are verified professionals with extensive experience in their field.</p>
+                
+                <div class="provider-cards">
+                    <div class="provider-card">
+                        <div class="provider-header">
+                            <div class="provider-avatar">
+                                <img src="/api/placeholder/60/60" alt="Electrician Avatar">
+                            </div>
+                            <div class="provider-details">
+                                <h3>Vikram Sharma</h3>
+                                <div class="rating">★★★★★</div>
+                                <div class="experience">12+ years experience</div>
+                            </div>
+                        </div>
+                        <div class="provider-body">
+                            <p>Expert in all types of residential and commercial electrical services. Specializes in complex wiring and distribution board installation.</p>
+                        </div>
+                        <a href="#book-now" class="btn btn-outline" style="width: 100%; text-align: center;">Book This Pro</a>
+                    </div>
+                    
+                    <div class="provider-card">
+                        <div class="provider-header">
+                            <div class="provider-avatar">
+                                <img src="/api/placeholder/60/60" alt="Electrician Avatar">
+                            </div>
+                            <div class="provider-details">
+                                <h3>Sneha Patel</h3>
+                                <div class="rating">★★★★☆</div>
+                                <div class="experience">9+ years experience</div>
+                            </div>
+                        </div>
+                        <div class="provider-body">
+                            <p>Specialized in electrical troubleshooting and repair services. Known for precise diagnosis and efficient solutions for electrical issues.</p>
+                        </div>
+                        <a href="#book-now" class="btn btn-outline" style="width: 100%; text-align: center;">Book This Pro</a>
+                    </div>
+                    
+                    <div class="provider-card">
+                        <div class="provider-header">
+                            <div class="provider-avatar">
+                                <img src="/api/placeholder/60/60" alt="Electrician Avatar">
+                            </div>
+                            <div class="provider-details">
+                                <h3>Rahul Gupta</h3>
+                                <div class="rating">★★★★★</div>
+                                <div class="experience">8+ years experience</div>
+                            </div>
+                        </div>
+                        <div class="provider-body">
+                            <p>Expert in smart home electrical setups and lighting installations. Specializes in modern electrical solutions and energy-efficient systems.</p>
+                        </div>
+                        <a href="#book-now" class="btn btn-outline" style="width: 100%; text-align: center;">Book This Pro</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="service-steps">
+                <h2>How It Works</h2>
+                <p>Booking an electrical service with Suvidhaa is quick and hassle-free.</p>
+                
+                <div class="step-cards">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <h3>Book a Service</h3>
+                        <p>Select the service you need and choose a convenient time slot.</p>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <h3>Professional Assignment</h3>
+                        <p>We'll assign a verified electrician based on your requirement.</p>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <h3>Service Delivery</h3>
+                        <p>Our professional will arrive at your doorstep with all necessary equipment.</p>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">4</div>
+                        <h3>Payment & Feedback</h3>
+                        <p>Pay securely after the service and share your experience.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-section">
+                <h2>Frequently Asked Questions</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-question">How quickly can you respond to emergency electrical issues?</div>
+                    <div class="faq-answer">For emergency electrical services, we aim to have a professional at your location within 45-60 minutes of booking. Our emergency service is available 24/7, including weekends and holidays.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Are your electricians certified and insured?</div>
+                    <div class="faq-answer">Yes, all our electricians are licensed, certified, and insured. They undergo rigorous background checks and skill assessments before joining our platform to ensure the highest standards of service and safety.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">What electrical safety precautions do your technicians take?</div>
+                    <div class="faq-answer">Our electricians follow strict safety protocols including proper equipment usage, power shutoff before work begins, thorough testing after completion, and adherence to all electrical codes and standards. Safety is our top priority for both our professionals and customers.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Do you provide electrical services for commercial spaces?</div>
+                    <div class="faq-answer">Yes, we offer electrical services for both residential and commercial properties. Our electricians are experienced in handling complex commercial electrical systems, industrial wiring, and business-specific electrical needs.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Can your electricians install smart home electrical systems?</div>
+                    <div class="faq-answer">Absolutely! Our electricians are trained in modern smart home electrical installations including smart switches, automated lighting systems, smart thermostats, and home automation integration. We can help upgrade your home with the latest electrical technology.</div>
+                </div>
+            </div>
+            
+            <div class="related-services">
+                <h2>Related Services</h2>
+                <div class="services-grid">
+                    <div class="service-card" onclick="viewServiceDetails('plumbing')">
+                        <div class="service-img">
+                            <img src="https://i.ibb.co/N20fPMRG/39137cd2-a5ea-4753-8108-cf88e276c052.png" alt="Plumbing Services">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-rating">★★★★★</div>
+                            <h3>Plumbing</h3>
+                            <p>Professional plumbers for all your water system needs.</p>
+                            <div class="service-price">Starting from ₹499</div>
+                            <a href="booking.html" class="btn btn-outline" onclick="event.stopPropagation(); bookService('plumbing')">Book Now</a>
+                        </div>
+                    </div>
+
+                    <div class="service-card" onclick="viewServiceDetails('cleaning')">
+                        <div class="service-img">
+                            <img src="https://i.ibb.co/6Q3zdLv/expanded-image.png" alt="Cleaning Services">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-rating">★★★★★</div>
+                            <h3>Home Cleaning</h3>
+                            <p>Professional cleaning services for a spotless home.</p>
+                            <div class="service-price">Starting from ₹699</div>
+                            <a href="booking.html" class="btn btn-outline" onclick="event.stopPropagation(); bookService('cleaning')">Book Now</a>
+                        </div>
+                    </div>
+
+                    <div class="service-card" onclick="viewServiceDetails('appliance')">
+                        <div class="service-img">
+                            <img src="/api/placeholder/400/250" alt="Appliance Repair">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-rating">★★★★☆</div>
+                            <h3>Appliance Repair</h3>
+                            <p>Expert repair services for all household appliances.</p>
+                            <div class="service-price">Starting from ₹599</div>
+                            <a href="booking.html" class="btn btn-outline" onclick="event.stopPropagation(); bookService('appliance')">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cta-booking" id="book-now">
+                <h2>Book Your Electrician Service Now</h2>
+                <p>Our professionals are ready to help you with any electrical needs. Schedule a service at your convenience.</p>
+                
+                <div class="booking-form">
+                    <form id="service-booking-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="service-type">Service Type</label>
+                                <select id="service-type" required>
+                                    <option value="">Select Service Type</option>
+                                    <option value="electrical-repair">Electrical Repair</option>
+                                    <option value="wiring">Wiring/Rewiring</option>
+                                    <option value="circuit-breaker">Circuit Breaker Issues</option>
+                                    <option value="lighting">Lighting Installation</option>
+                                    <option value="fan-installation">Fan Installation</option>
+                                    <option value="switch-socket">Switch/Socket Installation</option>
+                                    <option value="inspection">Electrical Safety Inspection</option>
+                                    <option value="other">Other Electrical Services</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="service-date">Preferred Date</label>
+                                <input type="date" id="service-date" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="service-time">Preferred Time</label>
+                                <select id="service-time" required>
+                                    <option value="">Select Time Slot</option>
+                                    <option value="morning">Morning (8:00 AM - 12:00 PM)</option>
+                                    <option value="afternoon">Afternoon (12:00 PM - 4:00 PM)</option>
+                                    <option value="evening">Evening (4:00 PM - 8:00 PM)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="service-urgency">Urgency</label>
+                                <select id="service-urgency" required>
+                                    <option value="standard">Standard Service</option>
+                                    <option value="urgent">Urgent (Within 4 hours)</option>
+                                    <option value="emergency">Emergency (ASAP)</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="customer-name">Full Name</label>
+                                <input type="text" id="customer-name" placeholder="Your full name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="customer-phone">Phone Number</label>
+                                <input type="tel" id="customer-phone" placeholder="Your contact number" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="customer-address">Address</label>
+                                <input type="text" id="customer-address" placeholder="Service location address" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="service-description">Problem Description</label>
+                                <textarea id="service-description" placeholder="Please describe your electrical issue in detail"></textarea>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <button type="submit" class="btn btn-lg" style="width: 100%;">Book Service Now</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Join Our Growing Community</h2>
+                <p class="cta-p">Whether you're looking for quality services or want to offer your professional skills, Suvidhaa is the platform that brings people together.</p>
+                <a href="#" class="btn btn-lg" onclick="openProviderModal()">Find Services</a>
+                <a href="#" class="btn btn-outline btn-lg">Become a Provider</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="logo" onclick="scrollToTop()">Suvidh<span>aa</span></div>
+                    <p>Connecting quality service providers with customers seeking reliable home services.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">f</a>
+                        <a href="#" class="https://www.instagram.com/suvidhaa.shop/">X</a>
+                        <a href="#" class="social-link">in</a>
+                        <a href="#" class="social-link">ig</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">How It Works</a></li>
+                        <li><a href="#">Become a Provider</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Popular Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Plumbing</a></li>
+                        <li><a href="#">Electrician</a></li>
+                        <li><a href="#">Home Cleaning</a></li>
+                        <li><a href="#">Painting</a></li>
+                        <li><a href="#">Beauty & Spa</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">Support Center</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Newsletter</h3>
+                    <div class="newsletter">
+                        <p>Subscribe to get updates on new services and exclusive offers.</p>
+                        <form class="newsletter-form">
+                            <input type="email" class="newsletter-input" placeholder="Your Email Address">
+                            <button type="submit" class="newsletter-btn">→</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Suvidhaa. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="back-to-top" onclick="scrollToTop()">↑</div>
+
+    <script>
+        // JavaScript to handle FAQ toggles
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentNode;
+                faqItem.classList.toggle('active');
+            });
+        });
+
+        // Function to scroll to top
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Function to toggle mobile menu
+        function toggleMenu() {
+            document.querySelector('.nav-links').classList.toggle('nav-active');
+            document.querySelector('.hamburger').classList.toggle('toggle');
+        }
+
+        // Functions to handle section scrolling
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+            // Close mobile menu if open
+            document.querySelector('.nav-links').classList.remove('nav-active');
+            document.querySelector('.hamburger').classList.remove('toggle');
+        }
+
+        // Functions for service navigation
+        function viewServiceDetails(serviceType) {
+            // Navigate to service detail page
+            console.log(`Viewing ${serviceType} service details`);
+            // Add actual navigation logic here
+        }
+
+        function bookService(serviceType) {
+            // Navigate to booking page for specific service
+            console.log(`Booking ${serviceType} service`);
+            // Add actual booking logic here
+        }
+
+        // Functions for modal dialogs
+        function openLoginModal() {
+            // Open login modal
+            console.log('Opening login modal');
+            // Add actual modal opening logic here
+        }
+
+        function openProviderModal() {
+            // Open provider registration modal
+            console.log('Opening provider registration modal');
+            // Add actual modal opening logic here
+        }
+
+        // Form submission handling
+        document.getElementById('service-booking-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Handle form submission
+            console.log('Booking form submitted');
+            // Add actual form submission logic here
+            alert('Thank you for booking our service! We will contact you shortly to confirm your appointment.');
+        });
+
+        // Back to top button visibility
+        window.addEventListener('scroll', function() {
+            const backToTopButton = document.querySelector('.back-to-top');
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('visible');
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        });
+    </script>
+</body>
+</html>

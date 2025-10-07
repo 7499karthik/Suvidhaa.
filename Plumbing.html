@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plumbing Services - Suvidhaa</title>
+    <!-- Google Fonts Integration -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo" onclick="scrollToTop()">Suvidh<span>aa</span></div>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html" onclick="scrollToSection('home')">Home</a></li>
+                    <li><a href="Painting.html" onclick="scrollToSection('services')">Services</a></li>
+                    <li><a href="How it works.html" onclick="scrollToSection('how-works')">How It Works</a></li>
+                    <!-- <li><a href="about us.html" onclick="scrollToSection('features')">About us</a></li>
+                    <li><a href="contact us.html" onclick="scrollToSection('testimonials')">Contact us</a></li> -->
+                    <li><a href="provider.html" onclick="openProviderModal()" class="btn btn-outline1">Become a Provider</a></li>
+                    <li><a href="sign in login.html" onclick="openLoginModal()" class="btn btn-outline1">Login / Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="service-hero">
+        <div class="container">
+            <div class="service-hero-content">
+                <h1>Professional Plumbing Services</h1>
+                <p>Get expert plumbing solutions for your home or business. Our certified plumbers handle everything from minor repairs to major installations.</p>
+                <a href="#book-now" class="btn btn-lg">Book Service Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="service-overview">
+                <div class="service-details">
+                    <h2>Service Overview</h2>
+                    <p>Our plumbing service covers a wide range of issues, ensuring that your water systems function properly. Whether you're dealing with a leaky faucet, clogged drain, or need a new water heater installation, our experts are here to help.</p>
+                    
+                    <h3>Our Plumbing Services Include:</h3>
+                    <ul>
+                        <li>Leakage Detection & Repair</li>
+                        <li>Pipe Installation & Replacement</li>
+                        <li>Drain Cleaning & Unclogging</li>
+                        <li>Water Heater Services</li>
+                        <li>Fixture Installation & Repair</li>
+                        <li>Bathroom & Kitchen Plumbing</li>
+                        <li>Water Purification Systems</li>
+                        <li>Preventive Maintenance</li>
+                    </ul>
+                    
+                    <div class="service-highlights">
+                        <div class="highlight">
+                            <h4>✓ 24/7 Emergency Service</h4>
+                            <p>Our plumbers are available round the clock for urgent plumbing issues.</p>
+                        </div>
+                        <div class="highlight">
+                            <h4>✓ 30-Day Service Guarantee</h4>
+                            <p>If the same issue recurs within 30 days, we'll fix it for free.</p>
+                        </div>
+                        <div class="highlight">
+                            <h4>✓ Licensed & Insured Professionals</h4>
+                            <p>All our plumbers are certified with years of experience.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-image1">
+                    <img src="https://i.ibb.co/N20fPMRG/39137cd2-a5ea-4753-8108-cf88e276c052.png" alt="Plumbing Service">
+                </div>
+            </div>
+            
+            <div class="service-pricing">
+                <h2>Transparent Pricing</h2>
+                <p>Our plumbing services come with clear, upfront pricing. No hidden charges or surprises.</p>
+                
+                <div class="pricing-tables">
+                    <div class="pricing-option">
+                        <h3>Basic Service</h3>
+                        <div class="price">₹499</div>
+                        <div class="price-details">Starting price for basic services</div>
+                        <ul>
+                            <li>Leakage Inspection</li>
+                            <li>Faucet Repair</li>
+                            <li>Minor Drain Cleaning</li>
+                            <li>Basic Fixture Installation</li>
+                        </ul>
+                        <a href="booking.html" class="btn">Book Now</a>
+                    </div>
+                    
+                    <div class="pricing-option">
+                        <h3>Standard Service</h3>
+                        <div class="price">₹999</div>
+                        <div class="price-details">Most common plumbing needs</div>
+                        <ul>
+                            <li>Complete Pipe Inspection</li>
+                            <li>Deep Drain Cleaning</li>
+                            <li>Fixture Replacement</li>
+                            <li>Water Pressure Issues</li>
+                            <li>Minor Pipe Repairs</li>
+                        </ul>
+                        <a href="booking.html" class="btn">Book Now</a>
+                    </div>
+                    
+                    <div class="pricing-option">
+                        <h3>Premium Service</h3>
+                        <div class="price">₹1899</div>
+                        <div class="price-details">Comprehensive plumbing solutions</div>
+                        <ul>
+                            <li>Major Pipe Replacement</li>
+                            <li>Water Heater Installation</li>
+                            <li>Bathroom Plumbing Setup</li>
+                            <li>Water Purification Setup</li>
+                            <li>1-Year Service Warranty</li>
+                        </ul>
+                        <a href="booking.html" class="btn">Book Now</a>
+                    </div>
+                </div>
+                
+                <p style="margin-top: 20px; font-size: 0.9rem;">* Final pricing may vary based on the complexity of the job and materials required. Our technician will provide an exact quote after inspection.</p>
+            </div>
+            
+            <div class="provider-profiles">
+                <h2>Meet Our Top Plumbers</h2>
+                <p>Our service providers are verified professionals with extensive experience in their field.</p>
+                
+                <div class="provider-cards">
+                    <div class="provider-card">
+                        <div class="provider-header">
+                            <div class="provider-avatar">
+                                <img src="/api/placeholder/60/60" alt="Plumber Avatar">
+                            </div>
+                            <div class="provider-details">
+                                <h3>Rajesh Kumar</h3>
+                                <div class="rating">★★★★★</div>
+                                <div class="experience">10+ years experience</div>
+                            </div>
+                        </div>
+                        <div class="provider-body">
+                            <p>Expert in all types of residential and commercial plumbing services. Specializes in pipe replacement and water heater installation.</p>
+                        </div>
+                        <a href="#book-now" class="btn btn-outline" style="width: 100%; text-align: center;">Book This Pro</a>
+                    </div>
+                    
+                    <div class="provider-card">
+                        <div class="provider-header">
+                            <div class="provider-avatar">
+                                <img src="/api/placeholder/60/60" alt="Plumber Avatar">
+                            </div>
+                            <div class="provider-details">
+                                <h3>Amit Singh</h3>
+                                <div class="rating">★★★★☆</div>
+                                <div class="experience">8+ years experience</div>
+                            </div>
+                        </div>
+                        <div class="provider-body">
+                            <p>Specialized in leak detection and repair services. Known for quick and efficient solutions for emergency plumbing issues.</p>
+                        </div>
+                        <a href="#book-now" class="btn btn-outline" style="width: 100%; text-align: center;">Book This Pro</a>
+                    </div>
+                    
+                    <div class="provider-card">
+                        <div class="provider-header">
+                            <div class="provider-avatar">
+                                <img src="/api/placeholder/60/60" alt="Plumber Avatar">
+                            </div>
+                            <div class="provider-details">
+                                <h3>Priya Verma</h3>
+                                <div class="rating">★★★★★</div>
+                                <div class="experience">7+ years experience</div>
+                            </div>
+                        </div>
+                        <div class="provider-body">
+                            <p>Expert in bathroom and kitchen plumbing installations. Specializes in modern fixture installations and advanced water systems.</p>
+                        </div>
+                        <a href="#book-now" class="btn btn-outline" style="width: 100%; text-align: center;">Book This Pro</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="service-steps">
+                <h2>How It Works</h2>
+                <p>Booking a plumbing service with Suvidhaa is quick and hassle-free.</p>
+                
+                <div class="step-cards">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <h3>Book a Service</h3>
+                        <p>Select the service you need and choose a convenient time slot.</p>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <h3>Professional Assignment</h3>
+                        <p>We'll assign a verified plumber based on your requirement.</p>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <h3>Service Delivery</h3>
+                        <p>Our professional will arrive at your doorstep with all necessary equipment.</p>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">4</div>
+                        <h3>Payment & Feedback</h3>
+                        <p>Pay securely after the service and share your experience.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-section">
+                <h2>Frequently Asked Questions</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-question">How quickly can you respond to emergency plumbing issues?</div>
+                    <div class="faq-answer">For emergency plumbing services, we aim to have a professional at your location within 60-90 minutes of booking. Our emergency service is available 24/7, including weekends and holidays.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Do your plumbers carry spare parts with them?</div>
+                    <div class="faq-answer">Yes, our plumbers carry commonly required spare parts and tools. For specific parts or custom fixtures, they might need to source them separately, which they will discuss with you during the service visit.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">What is covered under your service warranty?</div>
+                    <div class="faq-answer">Our service warranty covers any issues that arise due to the service provided. If the same problem recurs within 30 days of our service, we'll fix it for free. For premium services, we offer an extended warranty of up to 1 year on parts and labor.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">How are your service providers vetted?</div>
+                    <div class="faq-answer">All our service providers undergo a rigorous verification process including background checks, skill assessment, and training. We verify their identity, professional certifications, and experience before they join our platform.</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Can I reschedule a booked service?</div>
+                    <div class="faq-answer">Yes, you can reschedule your service through the app or website at least 4 hours before the scheduled time without any penalty. For emergency rescheduling, please contact our customer support.</div>
+                </div>
+            </div>
+            
+            <div class="related-services">
+                <h2>Related Services</h2>
+                <div class="services-grid">
+                    <div class="service-card" onclick="viewServiceDetails('electrical')">
+                        <div class="service-img">
+                            <img src="https://i.ibb.co/KphG6qCd/expanded-background-image.png" alt="Electrical Services">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-rating">★★★★☆</div>
+                            <h3>Electrician</h3>
+                            <p>Certified electricians for all your electrical needs.</p>
+                            <div class="service-price">Starting from ₹399</div>
+                            <a href="booking.html" class="btn btn-outline" onclick="event.stopPropagation(); bookService('electrical')">Book Now</a>
+                        </div>
+                    </div>
+
+                    <div class="service-card" onclick="viewServiceDetails('cleaning')">
+                        <div class="service-img">
+                            <img src="https://i.ibb.co/6Q3zdLv/expanded-image.png" alt="Cleaning Services">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-rating">★★★★★</div>
+                            <h3>Home Cleaning</h3>
+                            <p>Professional cleaning services for a spotless home.</p>
+                            <div class="service-price">Starting from ₹699</div>
+                            <a href="booking.html" class="btn btn-outline" onclick="event.stopPropagation(); bookService('cleaning')">Book Now</a>
+                        </div>
+                    </div>
+
+                    <div class="service-card" onclick="viewServiceDetails('carpentry')">
+                        <div class="service-img">
+                            <img src="https://i.ibb.co/FbKbJ5bJ/438a0ac6-037e-4b5e-9a1e-d58e34bf933a.jpg" alt="Carpentry Services">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-rating">★★★★☆</div>
+                            <h3>Carpentry</h3>
+                            <p>Custom furniture and woodwork by skilled carpenters.</p>
+                            <div class="service-price">Starting from ₹799</div>
+                            <a href="booking.html" class="btn btn-outline" onclick="event.stopPropagation(); bookService('carpentry')">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cta-booking" id="book-now">
+                <h2>Book Your Plumbing Service Now</h2>
+                <p>Our professionals are ready to help you with any plumbing needs. Schedule a service at your convenience.</p>
+                
+                <div class="booking-form">
+                    <form id="service-booking-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="service-type">Service Type</label>
+                                <select id="service-type" required>
+                                    <option value="">Select Service Type</option>
+                                    <option value="leak-repair">Leak Repair</option>
+                                    <option value="pipe-installation">Pipe Installation</option>
+                                    <option value="drain-cleaning">Drain Cleaning</option>
+                                    <option value="fixture-installation">Fixture Installation</option>
+                                    <option value="water-heater">Water Heater Service</option>
+                                    <option value="other">Other Plumbing Services</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="service-date">Preferred Date</label>
+                                <input type="date" id="service-date" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="service-time">Preferred Time</label>
+                                <select id="service-time" required>
+                                    <option value="">Select Time Slot</option>
+                                    <option value="morning">Morning (8:00 AM - 12:00 PM)</option>
+                                    <option value="afternoon">Afternoon (12:00 PM - 4:00 PM)</option>
+                                    <option value="evening">Evening (4:00 PM - 8:00 PM)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="service-urgency">Urgency</label>
+                                <select id="service-urgency" required>
+                                    <option value="standard">Standard Service</option>
+                                    <option value="urgent">Urgent (Within 4 hours)</option>
+                                    <option value="emergency">Emergency (ASAP)</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="customer-name">Full Name</label>
+                                <input type="text" id="customer-name" placeholder="Your full name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="customer-phone">Phone Number</label>
+                                <input type="tel" id="customer-phone" placeholder="Your contact number" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="customer-address">Address</label>
+                                <input type="text" id="customer-address" placeholder="Service location address" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="service-description">Problem Description</label>
+                                <textarea id="service-description" placeholder="Please describe your plumbing issue in detail"></textarea>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <button type="submit" class="btn btn-lg" style="width: 100%;">Book Service Now</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="logo" onclick="scrollToTop()">Suvidh<span>aa</span></div>
+                    <p>Connecting quality service providers with customers seeking reliable home services.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">f</a>
+                        <a href="#" class="social-link">X</a>
+                        <a href="#" class="social-link">in</a>
+                        <a href="#" class="social-link">ig</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">How It Works</a></li>
+                        <li><a href="#">Become a Provider</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Popular Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Plumbing</a></li>
+                        <li><a href="#">Electrician</a></li>
+                        <li><a href="#">Home Cleaning</a></li>
+                        <li><a href="#">Painting</a></li>
+                        <li><a href="#">Beauty & Spa</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">Support Center</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-links">
+                        <li>Email: support@suvidhaa.com</li>
+                        <li>Phone: +91 9876543210</li>
+                        <li>Address: 123 Main Street, New Delhi, India</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Suvidhaa. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="back-to-top" onclick="scrollToTop()">↑</div>
+    <script>
+        // JavaScript to handle FAQ toggles
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentNode;
+                faqItem.classList.toggle('active');
+            });
+        });
+
+        // Function to scroll to top
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Function to toggle mobile menu
+        function toggleMenu() {
+            document.querySelector('.nav-links').classList.toggle('nav-active');
+            document.querySelector('.hamburger').classList.toggle('toggle');
+        }
+
+        // Functions to handle section scrolling
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+            // Close mobile menu if open
+            document.querySelector('.nav-links').classList.remove('nav-active');
+            document.querySelector('.hamburger').classList.remove('toggle');
+        }
+
+        // Functions for service navigation
+        function viewServiceDetails(serviceType) {
+            // Navigate to service detail page
+            console.log(`Viewing ${serviceType} service details`);
+            // Add actual navigation logic here
+        }
+
+        function bookService(serviceType) {
+            // Navigate to booking page for specific service
+            console.log(`Booking ${serviceType} service`);
+            // Add actual booking logic here
+        }
+
+        // Functions for modal dialogs
+        function openLoginModal() {
+            // Open login modal
+            console.log('Opening login modal');
+            // Add actual modal opening logic here
+        }
+
+        function openProviderModal() {
+            // Open provider registration modal
+            console.log('Opening provider registration modal');
+            // Add actual modal opening logic here
+        }
+
+        // Form submission handling
+        document.getElementById('service-booking-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Handle form submission
+            console.log('Booking form submitted');
+            // Add actual form submission logic here
+            alert('Thank you for booking our service! We will contact you shortly to confirm your appointment.');
+        });
+       
+        // Mobile menu toggle
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            const hamburger = document.querySelector('.hamburger');
+            navLinks.classList.toggle('nav-active');
+            hamburger.classList.toggle('toggle');
+        }
+
+        // Scroll to section
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Scroll to top
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Modal functions
+        function openProviderModal() {
+            document.getElementById('providerModal').style.display = 'block';
+        }
+
+        function closeProviderModal() {
+            document.getElementById('providerModal').style.display = 'none';
+        }
+
+        function openLoginModal() {
+            document.getElementById('loginModal').style.display = 'block';
+        }
+
+        function closeLoginModal() {
+            document.getElementById('loginModal').style.display = 'none';
+        }
+
+        // Search services
+        function searchServices() {
+            const service = document.getElementById('service-select').value;
+            const location = document.getElementById('location-input').value;
+            
+            if (service && location) {
+                alert(`Searching for ${service} services in ${location}`);
+                // In a real app, this would redirect to search results
+            } else {
+                alert('Please select a service and enter your location');
+            }
+        }
+
+        // View service details
+        function viewServiceDetails(service) {
+            alert(`View details for ${service} service`);
+            // In a real app, this would open the service details page
+        }
+
+        // Book service
+        function bookService(service) {
+            openLoginModal();
+            // In a real app, this would check if user is logged in,
+            // and then redirect to booking page or open login modal
+        }
+
+        // Back to top button visibility
+        window.addEventListener('scroll', function() {
+            const backToTopButton = document.querySelector('.back-to-top');
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('visible');
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        });
+
+        // Close modals when clicking outside
+        window.addEventListener('click', function(event) {
+            const providerModal = document.getElementById('providerModal');
+            const loginModal = document.getElementById('loginModal');
+            
+            if (event.target === providerModal) {
+                closeProviderModal();
+            }
+            
+            if (event.target === loginModal) {
+                closeLoginModal();
+            }
+        });
+    
+    </script>
+</body>
+</html> -->
+<section class="cta">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Join Our Growing Community</h2>
+            <p class="cta-p">Whether you're looking for quality services or want to offer your professional skills, Suvidhaa is the platform that brings people together.</p>
+            <a href="#" class="btn btn-lg" onclick="openProviderModal()">Find Services</a>
+            <a href="#" class="btn btn-outline btn-lg">Become a Provider</a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-column">
+                <div class="logo" onclick="scrollToTop()">Suvidh<span>aa</span></div>
+                <p>Connecting quality service providers with customers seeking reliable home services.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link">f</a>
+                    <a href="#" class="social-link">X</a>
+                    <a href="https://www.instagram.com/suvidhaa.shop/" class="social-link"">in</a>
+                    <a href="#" class="social-link">ig</a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">How It Works</a></li>
+                    <li><a href="#">Become a Provider</a></li>
+                    <!-- <li><a href="#">Blog</a></li> -->
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Popular Services</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Plumbing</a></li>
+                    <li><a href="#">Electrician</a></li>
+                    <li><a href="#">Home Cleaning</a></li>
+                    <li><a href="#">Painting</a></li>
+                    <!-- <li><a href="#">Carpentry</a></li> -->
+                    <li><a href="#">Beauty & Spa</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Support</h3>
+                <ul class="footer-links">
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                    <li><a href="#">Support Center</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Newsletter</h3>
+                <div class="newsletter">
+                    <p>Subscribe to get updates on new services and exclusive offers.</p>
+                    <form class="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="Your Email Address">
+                        <button type="submit" class="newsletter-btn">→</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Suvidhaa. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Provider Modal -->
+<!-- <div id="providerModal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal" onclick="closeProviderModal()">&times;</span>
+        <div class="modal-header">
+            <h2>Become a Service Provider</h2>
+            <p>Fill out the form below to join our network of trusted professionals.</p>
+        </div>
+        <form id="provider-form">
+            <div class="modal-form-group">
+                <label for="provider-name">Full Name</label>
+                <input type="text" id="provider-name" required>
+            </div>
+            <div class="modal-form-group">
+                <label for="provider-phone">Phone Number</label>
+                <input type="tel" id="provider-phone" required>
+            </div>
+            <div class="modal-form-group">
+                <label for="provider-email">Email Address</label>
+                <input type="email" id="provider-email" required>
+            </div>
+            <div class="modal-form-group">
+                <label for="provider-service">Service Category</label>
+                <select id="provider-service" required>
+                    <option value="">Select Service</option>
+                    <option value="plumbing">Plumbing</option>
+                    <option value="electrical">Electrician</option>
+                    <option value="cleaning">Cleaning</option>
+                    <option value="painting">Painting</option>
+                    <option value="carpentry">Carpentry</option>
+                    <option value="beauty">Beauty & Spa</option>
+                    <option value="tutoring">Tutoring</option>
+                    <option value="appliance">Appliance Repair</option>
+                    <option value="gardening">Gardening</option>
+                </select>
+            </div>
+            <div class="modal-form-group">
+                <label for="provider-location">Service Location</label>
+                <input type="text" id="provider-location" required>
+            </div>
+            <div class="modal-form-group">
+                <label for="provider-experience">Years of Experience</label>
+                <input type="number" id="provider-experience" min="0" required>
+            </div>
+            <div class="modal-form-group">
+                <button type="submit" class="btn btn-lg" style="width: 100%;">Submit Application</button>
+            </div>
+        </form>
+    </div>
+</div> -->
+
+<!-- Login Modal -->
+<!-- <div id="loginModal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal" onclick="closeLoginModal()">&times;</span>
+        <div class="modal-header">
+            <h2>Login / Sign Up</h2>
+            <p>Access your account or create a new one</p>
+        </div>
+        <form id="login-form">
+            <div class="modal-form-group">
+                <label for="user-phone">Phone Number</label>
+                <input type="tel" id="user-phone" required>
+            </div>
+            <div class="modal-form-group">
+                <button type="submit" class="btn btn-lg" style="width: 100%;">Continue</button>
+            </div>
+        </form>
+    </div>
+</div> -->
+
+<div class="back-to-top" onclick="scrollToTop()">↑</div>
+
+
+<script>
+    // Mobile menu toggle
+    function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        const hamburger = document.querySelector('.hamburger');
+        navLinks.classList.toggle('nav-active');
+        hamburger.classList.toggle('toggle');
+    }
+
+    // Scroll to section
+    function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        section.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // Scroll to top
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+
+    // Modal functions
+    function openProviderModal() {
+        document.getElementById('providerModal').style.display = 'block';
+    }
+
+    function closeProviderModal() {
+        document.getElementById('providerModal').style.display = 'none';
+    }
+
+    function openLoginModal() {
+        document.getElementById('loginModal').style.display = 'block';
+    }
+
+    function closeLoginModal() {
+        document.getElementById('loginModal').style.display = 'none';
+    }
+
+    // Search services
+    function searchServices() {
+        const service = document.getElementById('service-select').value;
+        const location = document.getElementById('location-input').value;
+        
+        if (service && location) {
+            alert(`Searching for ${service} services in ${location}`);
+            // In a real app, this would redirect to search results
+        } else {
+            alert('Please select a service and enter your location');
+        }
+    }
+
+    // View service details
+    function viewServiceDetails(service) {
+        alert(`View details for ${service} service`);
+        // In a real app, this would open the service details page
+    }
+
+    // Book service
+    function bookService(service) {
+        openLoginModal();
+        // In a real app, this would check if user is logged in,
+        // and then redirect to booking page or open login modal
+    }
+
+    // Back to top button visibility
+    window.addEventListener('scroll', function() {
+        const backToTopButton = document.querySelector('.back-to-top');
+        if (window.pageYOffset > 300) {
+            backToTopButton.classList.add('visible');
+        } else {
+            backToTopButton.classList.remove('visible');
+        }
+    });
+
+    // Close modals when clicking outside
+    window.addEventListener('click', function(event) {
+        const providerModal = document.getElementById('providerModal');
+        const loginModal = document.getElementById('loginModal');
+        
+        if (event.target === providerModal) {
+            closeProviderModal();
+        }
+        
+        if (event.target === loginModal) {
+            closeLoginModal();
+        }
+    });
+</script>
+</body>
+</html>

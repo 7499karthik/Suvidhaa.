@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Service - Suvidhaa</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .booking-container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .booking-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .booking-header h1 {
+            color: #4a6bfa;
+            margin-bottom: 10px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #333;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        
+        .form-control:focus {
+            outline: none;
+            border-color: #4a6bfa;
+        }
+        
+        .price-summary {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        
+        .price-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        
+        .total-price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #4a6bfa;
+            border-top: 2px solid #ddd;
+            padding-top: 10px;
+            margin-top: 10px;
+        }
+        
+        .btn-book {
+            width: 100%;
+            padding: 15px;
+            background: #4a6bfa;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .btn-book:hover {
+            background: #3a5bea;
+            transform: translateY(-2px);
+        }
+        
+        .payment-methods {
+            display: flex;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        
+        .payment-btn {
+            flex: 1;
+            padding: 15px;
+            border: 2px solid #4a6bfa;
+            background: white;
+            color: #4a6bfa;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        
+        .payment-btn:hover {
+            background: #4a6bfa;
+            color: white;
+        }
+        
+        .payment-btn.selected {
+            background: #4a6bfa;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo" onclick="window.location.href='index.html'">Suvidh<span>aa</span></div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Painting.html">Services</a></li>
+                    <li><a href="Dashbord.html">Dashboard</a></li>
+                    <li><a href="#" onclick="logout()" class="btn btn-outline1">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="booking-container">
+            <div class="booking-header">
+                <h1>Book Your Service</h1>
+                <p>Fill in the details to book your service</p>
+            </div>
+
+            <form id="booking-form">
+                <div class="form-group">
+                    <label for="service-name">Service</label>
+                    <select id="service-name" class="form-control" required>
+                        <option value="">Select Service</option>
+                        <option value="Plumbing" data-price="899">Plumbing - ₹899</option>
+                        <option value="Electrician" data-price="799">Electrician - ₹799</option>
+                        <option value="Home Cleaning" data-price="699">Home Cleaning - ₹699</option>
+                        <option value="Painting" data-price="1299">Painting - ₹1,299</option>
+                        <option value="Carpentry" data-price="999">Carpentry - ₹999</option>
+                        <option value="Beauty & Spa" data-price="599">Beauty & Spa - ₹599</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="booking-date">Preferred Date</label>
+                    <input type="date" id="booking-date" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="booking-time">Preferred Time</label>
+                    <select id="booking-time" class="form-control" required>
+                        <option value="">Select Time</option>
+                        <option value="09:00 AM">09:00 AM</option>
+                        <option value="10:00 AM">10:00 AM</option>
+                        <option value="11:00 AM">11:00 AM</option>
+                        <option value="12:00 PM">12:00 PM</option>
+                        <option value="02:00 PM">02:00 PM</option>
+                        <option value="03:00 PM">03:00 PM</option>
+                        <option value="04:00 PM">04:00 PM</option>
+                        <option value="05:00 PM">05:00 PM</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="booking-location">Service Location</label>
+                    <textarea id="booking-location" class="form-control" rows="3" placeholder="Enter your complete address" required></textarea>
+                </div>
+
+                <div class="price-summary">
+                    <div class="price-row">
+                        <span>Service Charge:</span>
+                        <span id="service-charge">₹0</span>
+                    </div>
+                    <div class="price-row">
+                        <span>Tax (18%):</span>
+                        <span id="tax-amount">₹0</span>
+                    </div>
+                    <div class="price-row total-price">
+                        <span>Total Amount:</span>
+                        <span id="total-amount">₹0</span>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin: 20px 0;">
+                    <p style="font-weight: 600; margin-bottom: 10px;">Choose Payment Method:</p>
+                    <div class="payment-methods">
+                        <button type="button" class="payment-btn selected" data-link="https://rzp.io/rzp/suvidhaapaymentzJATNoA4">
+                            Primary Payment
+                        </button>
+                        <button type="button" class="payment-btn" data-link="https://rzp.io/rzp/SecondarypamentSuvidhaawuPp9GY">
+                            Secondary Payment
+                        </button>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-book">Book & Pay Now</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const API_URL = 'http://localhost:5000';
+        let selectedPaymentLink = 'https://rzp.io/rzp/suvidhaapaymentzJATNoA4';
+
+        // Check if user is logged in
+        const token = localStorage.getItem('token');
+        const user = JSON.parse(localStorage.getItem('user') || '{}');
+
+        if (!token) {
+            alert('Please login to book a service');
+            window.location.href = 'sign in login.html';
+        }
+
+        // Set minimum date to today
+        const today = new Date().toISOString().split('T')[0];
+        document.getElementById('booking-date').setAttribute('min', today);
+
+        // Calculate price
+        document.getElementById('service-name').addEventListener('change', function() {
+            const selectedOption = this.options[this.selectedIndex];
+            const price = parseFloat(selectedOption.dataset.price) || 0;
+            const tax = price * 0.18;
+            const total = price + tax;
+
+            document.getElementById('service-charge').textContent = `₹${price}`;
+            document.getElementById('tax-amount').textContent = `₹${tax.toFixed(2)}`;
+            document.getElementById('total-amount').textContent = `₹${total.toFixed(2)}`;
+        });
+
+        // Payment method selection
+        document.querySelectorAll('.payment-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.payment-btn').forEach(b => b.classList.remove('selected'));
+                this.classList.add('selected');
+                selectedPaymentLink = this.dataset.link;
+            });
+        });
+
+        // Form submission
+        document.getElementById('booking-form').addEventListener('submit', async function(e) {
+            e.preventDefault();
+
+            const serviceName = document.getElementById('service-name').value;
+            const selectedOption = document.getElementById('service-name').options[document.getElementById('service-name').selectedIndex];
+            const basePrice = parseFloat(selectedOption.dataset.price) || 0;
+            const tax = basePrice * 0.18;
+            const totalAmount = basePrice + tax;
+
+            const bookingData = {
+                providerId: '507f1f77bcf86cd799439011', // Dummy provider ID - replace with actual
+                service: serviceName,
+                date: document.getElementById('booking-date').value,
+                time: document.getElementById('booking-time').value,
+                location: document.getElementById('booking-location').value,
+                amount: totalAmount
+            };
+
+            try {
+                const response = await fetch(`${API_URL}/api/bookings`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': `Bearer ${token}`
+                    },
+                    body: JSON.stringify(bookingData)
+                });
+
+                const data = await response.json();
+
+                if (response.ok) {
+                    // Store booking info
+                    localStorage.setItem('pendingBooking', JSON.stringify(data.booking));
+                    
+                    alert(`Booking Created!\nBooking ID: ${data.booking.bookingId}\n\nRedirecting to payment...`);
+                    
+                    // Redirect to payment
+                    window.open(selectedPaymentLink, '_blank');
+                    
+                    // Redirect to dashboard after 2 seconds
+                    setTimeout(() => {
+                        window.location.href = 'Dashbord.html';
+                    }, 2000);
+                } else {
+                    alert(data.message || 'Booking failed. Please try again.');
+                }
+            } catch (error) {
+                console.error('Booking error:', error);
+                alert('An error occurred. Please try again.');
+            }
+        });
+
+        function logout() {
+            localStorage.clear();
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>

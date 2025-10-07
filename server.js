@@ -4,6 +4,7 @@ const cors = require('cors');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const dotenv = require('dotenv');
+const path = require('path');
 
 dotenv.config();
 
@@ -14,11 +15,12 @@ app.use(cors());
 app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true, limit: '10mb' }));
 
+// Serve static files (HTML, CSS, JS, images)
+app.use(express.static(path.join(__dirname)));
+
 // Debug middleware to log requests
 app.use((req, res, next) => {
   console.log(`${req.method} ${req.url}`);
-  console.log('Headers:', req.headers);
-  console.log('Body:', req.body);
   next();
 });
 
@@ -488,16 +490,29 @@ app.get('/api/dashboard/stats', verifyToken, async (req, res) => {
   }
 });
 
-// Health check route
-app.get('/', (req, res) => {
+// API Health check route
+app.get('/api', (req, res) => {
   res.json({ message: 'Suvidhaa API is running successfully!' });
 });
 
-// Test route for signup (optional - for browser testing)
-app.get('/api/auth/signup', (req, res) => {
-  res.json({ 
-    message: 'Signup endpoint is active. Use POST method with JSON body to register.',
-    requiredFields: ['fullName', 'email', 'phone', 'gender', 'password']
+// Serve HTML pages - This should be AFTER all API routes
+app.get('*', (req, res) => {
+  // Don't serve HTML for API routes
+  if (req.url.startsWith('/api')) {
+    return res.status(404).json({ message: 'API endpoint not found' });
+  }
+  
+  // Serve index.html for root
+  if (req.url === '/') {
+    return res.sendFile(path.join(__dirname, 'index.html'));
+  }
+  
+  // For other routes, try to serve the file
+  const filePath = path.join(__dirname, req.url);
+  res.sendFile(filePath, (err) => {
+    if (err) {
+      res.status(404).sendFile(path.join(__dirname, 'index.html'));
+    }
   });
 });
 

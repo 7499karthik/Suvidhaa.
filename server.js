@@ -23,10 +23,7 @@ app.use((req, res, next) => {
 });
 
 // MongoDB Connection
-mongoose.connect(process.env.MONGODB_URI, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-})
+mongoose.connect(process.env.MONGODB_URI)
 .then(() => console.log('MongoDB Connected Successfully'))
 .catch(err => console.log('MongoDB Connection Error:', err));
 
@@ -114,11 +111,17 @@ const verifyToken = (req, res, next) => {
 // User Signup
 app.post('/api/auth/signup', async (req, res) => {
   try {
+    console.log('Signup request received');
+    console.log('Request body:', req.body);
+    
     const { fullName, email, phone, gender, password } = req.body;
     
     // Validate input
     if (!fullName || !email || !phone || !gender || !password) {
-      return res.status(400).json({ message: 'All fields are required' });
+      return res.status(400).json({ 
+        message: 'All fields are required',
+        received: { fullName, email, phone, gender, password: password ? '***' : undefined }
+      });
     }
     
     if (password.length < 8) {
